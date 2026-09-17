@@ -95,10 +95,8 @@ export const products: Product[] = [
       'Iron sharpens iron. Spotter energy on a black tee — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Printful template ready.',
     price: 43,
     images: [
-      asset('/images/bash-bros-sheet.png'),
-      asset('/images/bash-bros-back.png'),
-      asset('/images/bash-bros-logo.png'),
       asset('/images/bash-bros-front.png'),
+      asset('/images/bash-bros-back.png'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
@@ -115,10 +113,8 @@ export const products: Product[] = [
       'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17. Printful template ready.',
     price: 43,
     images: [
-      asset('/images/born-for-adversity-sheet.png'),
-      asset('/images/born-for-adversity-back.png'),
-      asset('/images/born-for-adversity-logo.png'),
       asset('/images/born-for-adversity-front.png'),
+      asset('/images/born-for-adversity-back.png'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
