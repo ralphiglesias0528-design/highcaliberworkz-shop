@@ -31,7 +31,10 @@ export const products: Product[] = [
     description:
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut, sand drop.',
     price: 38,
-    images: [asset('/images/stay-blessed-tee.png')],
+    images: [
+      asset('/images/stay-blessed-front.png'),
+      asset('/images/stay-blessed-back.png'),
+    ],
     colors: ['Sand'],
     colorLabel: 'Sand',
     sizes: [...TEE_SIZES],

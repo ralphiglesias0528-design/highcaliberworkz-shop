@@ -46,6 +46,8 @@ const config = defineConfig({
         { path: '/shop/high-caliber' },
         { path: '/shop/pr-dna' },
         { path: '/shop/freedom-weighs-a-ton' },
+        { path: '/shop/bash-bros' },
+        { path: '/shop/born-for-adversity' },
         { path: '/shop/el-gordo-figure' },
         { path: '/shop/rolling-tray' },
       ],
