@@ -125,7 +125,7 @@ export const products: Product[] = [
     slug: 'born-for-adversity',
     name: 'Born for Adversity Tee',
     description:
-      'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17.',
+      'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17. Printful template ready.',
     price: 43,
     images: [
       asset('/images/born-for-adversity-sheet.png'),
@@ -138,6 +138,7 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['brotherhood', 'faith', 'friends', 'proverbs'],
+    printfulTemplateId: '107599661',
   },
 ]
 

@@ -46,7 +46,7 @@ npm run preview
 4. `pr-dna` — Puerto Rico In My DNA Tee (white)
 5. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (black) — Printful `107574313`
 6. `bash-bros` — Bash Bros Tee (black) — Proverbs 27:17 / Iron Sharpens Iron — Printful `107599440`
-7. `born-for-adversity` — Born for Adversity Tee (black) — Proverbs 17:17
+7. `born-for-adversity` — Born for Adversity Tee (black) — Proverbs 17:17 — Printful `107599661`
 
 Optional: El Gordo Ninja Figure (Shop3d), Rolling Tray (coming soon).
 
