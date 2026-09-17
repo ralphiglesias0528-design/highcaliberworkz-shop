@@ -78,13 +78,13 @@ export const products: Product[] = [
     slug: 'freedom-weighs-a-ton',
     name: 'Freedom Weighs a Ton Tee',
     description:
-      'Heavy truth on the back. Freedom Weighs a Ton — black tee with full back art. Printful template ready.',
+      'Freedom Weighs a Ton — black tee with full front art and High Caliber logo at the nape. Printful template ready.',
     price: 43,
     images: [
-      asset('/images/freedom-weighs-back-shirt.png'),
+      asset('/images/freedom-weighs-front-shirt.png'),
+      asset('/images/freedom-weighs-back-nape.png'),
       asset('/images/freedom-weighs-shirt.png'),
-      asset('/images/freedom-weighs-front.png'),
-      asset('/images/freedom-weighs-back.png'),
+      asset('/images/freedom-weighs-back-shirt.png'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
