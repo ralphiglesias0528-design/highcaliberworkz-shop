@@ -83,7 +83,10 @@ export const products: Product[] = [
     description:
       'Island blood, city streets. White tee for the ones who carry Boricua DNA wherever they go.',
     price: 38,
-    images: [asset('/images/pr-dna-tee.png')],
+    images: [
+      asset('/images/pr-dna-front.png'),
+      asset('/images/pr-dna-back.png'),
+    ],
     colors: ['White'],
     colorLabel: 'White',
     sizes: [...TEE_SIZES],
