@@ -30,7 +30,7 @@ npm run preview
 | Path | Page |
 |------|------|
 | `/` | Home |
-| `/shop` | Catalog (7 tees + optional figure/tray) |
+| `/shop` | Catalog (6 tees + optional figure/tray) |
 | `/shop/$slug` | Product detail |
 | `/cart` | Cart |
 | `/checkout` | Dry-run order summary |
@@ -42,11 +42,10 @@ npm run preview
 
 1. `stay-blessed` — Stay Blessed Tee (sand)
 2. `snacks-plans` — Snacks, Plans & Takeovers Tee (black)
-3. `high-caliber` — High Caliber Tee (black) — Printful `107569047`
-4. `pr-dna` — Puerto Rico In My DNA Tee (white)
-5. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (black) — Printful `107574313`
-6. `bash-bros` — Bash Bros Tee (black) — Proverbs 27:17 / Iron Sharpens Iron — Printful `107599440`
-7. `born-for-adversity` — Born for Adversity Tee (black) — Proverbs 17:17 — Printful `107599661`
+3. `pr-dna` — Puerto Rico In My DNA Tee (white)
+4. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (black) — Printful `107574313`
+5. `bash-bros` — Bash Bros Tee (black) — Proverbs 27:17 / Iron Sharpens Iron — Printful `107599440`
+6. `born-for-adversity` — Born for Adversity Tee (black) — Proverbs 17:17 — Printful `107599661`
 
 Optional: El Gordo Ninja Figure (Shop3d), Rolling Tray (coming soon).
 

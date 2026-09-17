@@ -58,25 +58,6 @@ export const products: Product[] = [
     category: 'tee',
   },
   {
-    id: 'high-caliber',
-    slug: 'high-caliber',
-    name: 'High Caliber Tee',
-    description:
-      'The lockup. No fluff — just High Caliber energy on a black tee. Printful template ready.',
-    price: 41,
-    images: [
-      asset('/images/high-caliber-tee-mockup.png'),
-      asset('/images/tee-front.png'),
-      asset('/images/lockup-front.png'),
-      asset('/images/high-caliber-lockup.png'),
-    ],
-    colors: ['Black'],
-    colorLabel: 'Black',
-    sizes: [...TEE_SIZES],
-    category: 'tee',
-    printfulTemplateId: '107569047',
-  },
-  {
     id: 'pr-dna',
     slug: 'pr-dna',
     name: 'Puerto Rico In My DNA Tee',

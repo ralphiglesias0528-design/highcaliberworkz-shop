@@ -43,7 +43,6 @@ const config = defineConfig({
         { path: '/partners' },
         { path: '/shop/stay-blessed' },
         { path: '/shop/snacks-plans' },
-        { path: '/shop/high-caliber' },
         { path: '/shop/pr-dna' },
         { path: '/shop/freedom-weighs-a-ton' },
         { path: '/shop/bash-bros' },
