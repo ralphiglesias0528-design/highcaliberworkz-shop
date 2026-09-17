@@ -28,7 +28,7 @@ export const products: Product[] = [
     name: 'Stay Blessed Tee',
     description:
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut, sand drop.',
-    price: 32,
+    price: 42,
     images: ['/images/high-caliber-lockup.png'],
     colors: ['Sand'],
     colorLabel: 'Sand',
@@ -42,7 +42,7 @@ export const products: Product[] = [
     name: 'Snacks, Plans & Takeovers Tee',
     description:
       'Fuel up, map it out, then take the block. Black tee for late nights and bigger moves.',
-    price: 32,
+    price: 42,
     images: ['/images/tee-front.png'],
     colors: ['Black'],
     colorLabel: 'Black',
@@ -55,7 +55,7 @@ export const products: Product[] = [
     name: 'High Caliber Tee',
     description:
       'The lockup. No fluff — just High Caliber energy on a black tee. Printful template ready.',
-    price: 34,
+    price: 44,
     images: ['/images/tee-front.png', '/images/lockup-front.png', '/images/high-caliber-lockup.png'],
     colors: ['Black'],
     colorLabel: 'Black',
@@ -69,7 +69,7 @@ export const products: Product[] = [
     name: 'Puerto Rico In My DNA Tee',
     description:
       'Island blood, city streets. White tee for the ones who carry Boricua DNA wherever they go.',
-    price: 32,
+    price: 42,
     images: ['/images/high-caliber-lockup.png'],
     colors: ['White'],
     colorLabel: 'White',
@@ -82,7 +82,7 @@ export const products: Product[] = [
     name: 'Freedom Weighs a Ton Tee',
     description:
       'Heavy truth on the back. Freedom Weighs a Ton — black tee with full back art. Printful template ready.',
-    price: 36,
+    price: 47,
     images: ['/images/freedom-weighs-back.png', '/images/freedom-weighs-mockup.png'],
     colors: ['Black'],
     colorLabel: 'Black',
@@ -99,7 +99,7 @@ export const optionalProducts: Product[] = [
     name: 'El Gordo Ninja Figure',
     description:
       'El Gordo Ninja — collectible figure. Grab it on Shop3d when drops go live.',
-    price: 45,
+    price: 59,
     images: ['/images/el-gordo-figure-sheet.png'],
     category: 'figure',
     externalUrl: 'https://shop3d.io',
@@ -110,7 +110,7 @@ export const optionalProducts: Product[] = [
     name: 'Rolling Tray',
     description:
       'High Caliber rolling tray — parked with MunchMakers / My Rolling Tray partners. Coming soon.',
-    price: 28,
+    price: 36,
     images: ['/images/high-caliber-lockup.png'],
     category: 'accessory',
     comingSoon: true,
