@@ -80,7 +80,12 @@ export const products: Product[] = [
     description:
       'Heavy truth on the back. Freedom Weighs a Ton — black tee with full back art. Printful template ready.',
     price: 43,
-    images: [asset('/images/freedom-weighs-back.png'), asset('/images/freedom-weighs-mockup.png')],
+    images: [
+      asset('/images/freedom-weighs-back-shirt.png'),
+      asset('/images/freedom-weighs-shirt.png'),
+      asset('/images/freedom-weighs-front.png'),
+      asset('/images/freedom-weighs-back.png'),
+    ],
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: [...TEE_SIZES],
