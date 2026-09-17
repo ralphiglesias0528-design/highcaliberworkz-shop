@@ -9,31 +9,44 @@ function AboutPage() {
         About
       </p>
       <h1 className="font-display mt-2 text-3xl tracking-wide text-gold uppercase sm:text-4xl">
-        HighCaliberWorkz
+        About High Caliber
       </h1>
-      <div className="mt-8 space-y-5 text-sm leading-relaxed text-zinc-400">
+      <div className="mt-8 space-y-5 text-sm leading-relaxed text-zinc-300 sm:text-base">
         <p>
-          HighCaliberWorkz is street merch with NYC weight and Puerto Rican
-          heat — dark charcoal, gold, and PR red. Industrial. Not pastel. Not
-          SaaS.
+          I&apos;m a Boricua kid, born and raised in the Bronx. In my mid-20s I
+          moved out to Queens and got hit with a whole different mix of
+          cultures — languages, styles, hustles, all stacked on top of each
+          other. That shift stuck with me.
         </p>
         <p>
-          Site name stays HighCaliberWorkz / HighCaliberWorkz.com. Header:
-          HIGH CALIBER WORKZ. Product titles and art labels use High Caliber
-          or El Gordo Ninja only — never Workz or Budzz on the drops.
+          I was raised rough. Not for a story. That&apos;s just how it was. The
+          Bronx taught me early what loyalty looks like, what pressure does,
+          and what it means to keep moving when nothing&apos;s handed to you. I
+          wanted my clothing line to carry that same energy — real, loud when
+          it needs to be, and proud of where it comes from.
         </p>
         <p>
-          Tees run through Printful. Figures through Shop3d. Trays parked with
-          MunchMakers / My Rolling Tray until the art locks. Checkout on this
-          shop is dry-run only — cart in localStorage, no charges.
+          High Caliber isn&apos;t random designs. It&apos;s Puerto Rico in my
+          DNA, Bronx grit, the cultures I absorbed in Queens, and the mindset
+          of being built different. Faith, family, hustle, progress —
+          everyday. More than a brand. It&apos;s how I came up, stitched into
+          the fit.
         </p>
       </div>
-      <Link
-        to="/shop"
-        className="mt-10 inline-block border border-gold px-6 py-3 text-xs font-bold tracking-[0.2em] text-gold uppercase hover:bg-gold hover:text-charcoal"
-      >
-        Enter the shop
-      </Link>
+      <div className="mt-10 flex flex-wrap gap-3">
+        <Link
+          to="/shop"
+          className="inline-block border border-gold px-6 py-3 text-xs font-bold tracking-[0.2em] text-gold uppercase hover:bg-gold hover:text-charcoal"
+        >
+          Enter the shop
+        </Link>
+        <Link
+          to="/character"
+          className="inline-block border border-pr-red px-6 py-3 text-xs font-bold tracking-[0.2em] text-pr-red uppercase hover:bg-pr-red hover:text-white"
+        >
+          Meet El Gordo Ninja
+        </Link>
+      </div>
     </div>
   )
 }
