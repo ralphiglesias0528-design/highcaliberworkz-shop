@@ -18,7 +18,7 @@ function ShopPage() {
           Shop
         </h1>
         <p className="mt-3 max-w-xl text-sm text-zinc-500">
-          Five tees. No fluff. High Caliber and El Gordo Ninja art only —
+          Seven tees. No fluff. High Caliber and El Gordo Ninja art only —
           never Workz lettering on the drops.
         </p>
       </div>

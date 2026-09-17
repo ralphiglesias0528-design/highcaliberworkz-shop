@@ -30,7 +30,7 @@ npm run preview
 | Path | Page |
 |------|------|
 | `/` | Home |
-| `/shop` | Catalog (5 tees + optional figure/tray) |
+| `/shop` | Catalog (7 tees + optional figure/tray) |
 | `/shop/$slug` | Product detail |
 | `/cart` | Cart |
 | `/checkout` | Dry-run order summary |
@@ -45,6 +45,8 @@ npm run preview
 3. `high-caliber` — High Caliber Tee (black) — Printful `107569047`
 4. `pr-dna` — Puerto Rico In My DNA Tee (white)
 5. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (black) — Printful `107574313`
+6. `bash-bros` — Bash Bros Tee (black) — Proverbs 27:17 / Iron Sharpens Iron
+7. `born-for-adversity` — Born for Adversity Tee (black) — Proverbs 17:17
 
 Optional: El Gordo Ninja Figure (Shop3d), Rolling Tray (coming soon).
 

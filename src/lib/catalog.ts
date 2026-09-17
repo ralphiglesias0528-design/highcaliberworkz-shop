@@ -22,7 +22,7 @@ export type Product = {
 
 export const TEE_SIZES = ['S', 'M', 'L', 'XL', '2XL'] as const
 
-/** Shop tees only — Stay Blessed through Freedom Weighs a Ton. */
+/** Shop tees only — Stay Blessed through Born for Adversity. */
 export const products: Product[] = [
   {
     id: 'stay-blessed',
@@ -99,6 +99,44 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     printfulTemplateId: '107574313',
+  },
+  {
+    id: 'bash-bros',
+    slug: 'bash-bros',
+    name: 'Bash Bros Tee',
+    description:
+      'Iron sharpens iron. Spotter energy on a black tee — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17.',
+    price: 43,
+    images: [
+      asset('/images/bash-bros-sheet.png'),
+      asset('/images/bash-bros-back.png'),
+      asset('/images/bash-bros-logo.png'),
+      asset('/images/bash-bros-front.png'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['iron', 'brotherhood', 'faith', 'proverbs'],
+  },
+  {
+    id: 'born-for-adversity',
+    slug: 'born-for-adversity',
+    name: 'Born for Adversity Tee',
+    description:
+      'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17.',
+    price: 43,
+    images: [
+      asset('/images/born-for-adversity-sheet.png'),
+      asset('/images/born-for-adversity-back.png'),
+      asset('/images/born-for-adversity-logo.png'),
+      asset('/images/born-for-adversity-front.png'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['brotherhood', 'faith', 'friends', 'proverbs'],
   },
 ]
 
