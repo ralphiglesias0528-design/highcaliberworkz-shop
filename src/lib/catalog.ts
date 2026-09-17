@@ -45,7 +45,10 @@ export const products: Product[] = [
     description:
       'Fuel up, map it out, then take the block. Black tee for late nights and bigger moves.',
     price: 38,
-    images: [asset('/images/snacks-plans-tee.png')],
+    images: [
+      asset('/images/snacks-plans-front.png'),
+      asset('/images/snacks-plans-back.png'),
+    ],
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: [...TEE_SIZES],

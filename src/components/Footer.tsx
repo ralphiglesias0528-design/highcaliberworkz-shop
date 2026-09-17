@@ -2,7 +2,7 @@ import { Link } from '@tanstack/react-router'
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-gold/20 bg-black">
+    <footer className="relative z-10 mt-auto border-t border-gold/20 bg-black">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:grid-cols-3">
         <div>
           <p className="font-display text-sm tracking-[0.2em] text-gold uppercase">

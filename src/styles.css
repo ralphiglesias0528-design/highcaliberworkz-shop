@@ -48,3 +48,13 @@ img {
 .font-display {
   font-family: var(--font-display);
 }
+
+
+/* Ambient scroll mockups sit under content; cards keep solid surfaces */
+.scroll-atmosphere {
+  contain: paint;
+}
+
+.scroll-atmosphere img {
+  max-width: none;
+}

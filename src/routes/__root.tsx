@@ -3,6 +3,7 @@ import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
 import { Header } from '#/components/Header'
 import { Footer } from '#/components/Footer'
+import { ScrollAtmosphere } from '#/components/ScrollAtmosphere'
 
 import appCss from '../styles.css?url'
 
@@ -31,9 +32,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className="flex min-h-screen flex-col antialiased">
+      <body className="relative flex min-h-screen flex-col antialiased">
+        <ScrollAtmosphere />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="relative z-10 flex-1">{children}</main>
         <Footer />
         <TanStackDevtools
           config={{ position: 'bottom-right' }}
