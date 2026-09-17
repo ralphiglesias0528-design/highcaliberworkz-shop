@@ -1,5 +1,6 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
 import { getShopTees, formatPrice } from '#/lib/catalog'
+import { asset } from '#/lib/asset'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -42,7 +43,7 @@ function Home() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-pr-red/20 via-transparent to-gold/20 blur-3xl" />
             <img
-              src="/images/high-caliber-lockup.png"
+              src={asset('/images/high-caliber-lockup.png')}
               alt="High Caliber lockup"
               className="relative mx-auto max-h-[420px] w-auto border border-gold/30 object-contain shadow-[0_0_60px_rgba(201,162,39,0.15)]"
             />

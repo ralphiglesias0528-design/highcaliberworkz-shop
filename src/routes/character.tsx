@@ -1,4 +1,5 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
+import { asset } from '#/lib/asset'
 
 export const Route = createFileRoute('/character')({ component: CharacterPage })
 
@@ -19,7 +20,7 @@ function CharacterPage() {
 
       <div className="mt-10 overflow-hidden border border-gold/30 bg-black">
         <img
-          src="/images/el-gordo-figure-sheet.png"
+          src={asset('/images/el-gordo-figure-sheet.png')}
           alt="El Gordo Ninja figure sheet"
           className="mx-auto w-full max-w-3xl object-contain"
         />
