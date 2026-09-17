@@ -31,7 +31,7 @@ export const products: Product[] = [
     description:
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut, sand drop.',
     price: 38,
-    images: [asset('/images/high-caliber-lockup.png')],
+    images: [asset('/images/stay-blessed-tee.png')],
     colors: ['Sand'],
     colorLabel: 'Sand',
     sizes: [...TEE_SIZES],
@@ -45,7 +45,7 @@ export const products: Product[] = [
     description:
       'Fuel up, map it out, then take the block. Black tee for late nights and bigger moves.',
     price: 38,
-    images: [asset('/images/tee-front.png')],
+    images: [asset('/images/snacks-plans-tee.png')],
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: [...TEE_SIZES],
@@ -58,7 +58,12 @@ export const products: Product[] = [
     description:
       'The lockup. No fluff — just High Caliber energy on a black tee. Printful template ready.',
     price: 41,
-    images: [asset('/images/tee-front.png'), asset('/images/lockup-front.png'), asset('/images/high-caliber-lockup.png')],
+    images: [
+      asset('/images/high-caliber-tee-mockup.png'),
+      asset('/images/tee-front.png'),
+      asset('/images/lockup-front.png'),
+      asset('/images/high-caliber-lockup.png'),
+    ],
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: [...TEE_SIZES],
@@ -72,7 +77,7 @@ export const products: Product[] = [
     description:
       'Island blood, city streets. White tee for the ones who carry Boricua DNA wherever they go.',
     price: 38,
-    images: [asset('/images/high-caliber-lockup.png')],
+    images: [asset('/images/pr-dna-tee.png')],
     colors: ['White'],
     colorLabel: 'White',
     sizes: [...TEE_SIZES],
@@ -113,7 +118,8 @@ export const optionalProducts: Product[] = [
     description:
       'High Caliber rolling tray — parked with MunchMakers / My Rolling Tray partners. Coming soon.',
     price: 34,
-    images: [asset('/images/high-caliber-lockup.png')],
+    // No unique tray mockup found — use HC print art (cannabis motif) as distinct brand placeholder.
+    images: [asset('/images/high-caliber-print-art.png')],
     category: 'accessory',
     comingSoon: true,
     buyDisabled: true,
