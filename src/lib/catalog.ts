@@ -97,7 +97,7 @@ export const products: Product[] = [
     slug: 'bash-bros',
     name: 'Bash Bros Tee',
     description:
-      'Iron sharpens iron. Spotter energy on a black tee — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Printful template ready.',
+      'Iron sharpens iron. Spotter energy on a black tee — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Bella+Canvas 3001 / Printful ready.',
     price: 43,
     images: [
       asset('/images/bash-bros-front.png'),
@@ -108,7 +108,7 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['iron', 'brotherhood', 'faith', 'proverbs'],
-    printfulTemplateId: '107599440',
+    printfulTemplateId: '107631980',
   },
   {
     id: 'born-for-adversity',
