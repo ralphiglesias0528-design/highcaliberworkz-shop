@@ -143,7 +143,7 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['brotherhood', 'faith', 'friends', 'proverbs'],
-    printfulTemplateId: '107599661',
+    printfulTemplateId: '107633038',
   },
 
   // --- Hoodies (same artwork as matching tees; tee mockups until hoodie mocks land) ---

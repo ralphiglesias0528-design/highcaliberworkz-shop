@@ -47,7 +47,7 @@ npm run preview
 3. `pr-dna` — Puerto Rico In My DNA Tee (default White)
 4. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (default Black) — Printful `107574313`
 5. `bash-bros` — Bash Bros Tee (default Black) — Proverbs 27:17 — Printful `107631980`
-6. `born-for-adversity` — Born for Adversity Tee (default Black) — Proverbs 17:17 — Printful `107599661`
+6. `born-for-adversity` — Born for Adversity Tee (default Black) — Proverbs 17:17 — Printful Bella+Canvas `107633038`
 
 **Hoodies** ($59.99, sizes S–5XL, same artwork, Gildan 18500-style via Printful):
 

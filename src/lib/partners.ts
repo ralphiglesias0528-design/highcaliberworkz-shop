@@ -13,7 +13,7 @@ export const partners: Partner[] = [
     name: 'Printful',
     role: 'Print-on-demand fulfillment',
     description:
-      'Tee production and fulfillment. High Caliber, Freedom Weighs a Ton, Bash Bros, and Born for Adversity templates live in Printful.',
+      'Tee production and fulfillment. High Caliber, Freedom Weighs a Ton, Bash Bros, and Born for Adversity templates live in Printful (moving the line to Bella+Canvas 3001).',
     url: 'https://www.printful.com',
     status: 'active',
   },
