@@ -64,7 +64,7 @@ export const products: Product[] = [
     slug: 'snacks-plans',
     name: 'Snacks, Plans & Takeovers Tee',
     description:
-      'Fuel up, map it out, then take the block. Late nights and bigger moves. Gildan 5000-style heavy cotton via Printful; pick your blank color.',
+      'Fuel up, map it out, then take the block. Late nights and bigger moves. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/snacks-plans-front.png'),
@@ -74,6 +74,7 @@ export const products: Product[] = [
     colorLabel: 'Black',
     sizes: [...TEE_SIZES],
     category: 'tee',
+    printfulTemplateId: '107633470',
   },
   {
     id: 'pr-dna',
