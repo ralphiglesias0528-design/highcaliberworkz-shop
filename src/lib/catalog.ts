@@ -30,7 +30,7 @@ export const products: Product[] = [
     name: 'Stay Blessed Tee',
     description:
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut, sand drop.',
-    price: 38,
+    price: 39.99,
     images: [
       asset('/images/stay-blessed-front.png'),
       asset('/images/stay-blessed-back.png'),
@@ -47,7 +47,7 @@ export const products: Product[] = [
     name: 'Snacks, Plans & Takeovers Tee',
     description:
       'Fuel up, map it out, then take the block. Black tee for late nights and bigger moves.',
-    price: 38,
+    price: 39.99,
     images: [
       asset('/images/snacks-plans-front.png'),
       asset('/images/snacks-plans-back.png'),
@@ -63,7 +63,7 @@ export const products: Product[] = [
     name: 'Puerto Rico In My DNA Tee',
     description:
       'Island blood, city streets. White tee for the ones who carry Boricua DNA wherever they go.',
-    price: 38,
+    price: 39.99,
     images: [
       asset('/images/pr-dna-front.png'),
       asset('/images/pr-dna-back.png'),
@@ -79,7 +79,7 @@ export const products: Product[] = [
     name: 'Freedom Weighs a Ton Tee',
     description:
       'Freedom Weighs a Ton — black tee with full front art and High Caliber logo at the nape. Printful template ready.',
-    price: 43,
+    price: 39.99,
     images: [
       asset('/images/freedom-weighs-front-shirt.png'),
       asset('/images/freedom-weighs-back-nape.png'),
@@ -98,7 +98,7 @@ export const products: Product[] = [
     name: 'Bash Bros Tee',
     description:
       'Iron sharpens iron. Spotter energy on a black tee — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Bella+Canvas 3001 / Printful ready.',
-    price: 43,
+    price: 39.99,
     images: [
       asset('/images/bash-bros-front.png'),
       asset('/images/bash-bros-back.png'),
@@ -116,7 +116,7 @@ export const products: Product[] = [
     name: 'Born for Adversity Tee',
     description:
       'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17. Printful template ready.',
-    price: 43,
+    price: 39.99,
     images: [
       asset('/images/born-for-adversity-front.png'),
       asset('/images/born-for-adversity-back.png'),
