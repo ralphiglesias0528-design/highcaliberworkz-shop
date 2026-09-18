@@ -30,7 +30,7 @@ npm run preview
 | Path | Page |
 |------|------|
 | `/` | Home |
-| `/shop` | Catalog (6 tees + optional figure/tray) |
+| `/shop` | Catalog (6 tees + 6 hoodies + optional figure/tray) |
 | `/shop/$slug` | Product detail |
 | `/cart` | Cart |
 | `/checkout` | Dry-run order summary |
@@ -38,14 +38,27 @@ npm run preview
 | `/partners` | Printful, Shop3d, Makeship, trays, GS-JJ |
 | `/about` | Brand |
 
-## Catalog (tees)
+## Catalog
 
-1. `stay-blessed` — Stay Blessed Tee (sand)
-2. `snacks-plans` — Snacks, Plans & Takeovers Tee (black)
-3. `pr-dna` — Puerto Rico In My DNA Tee (white)
-4. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (black) — Printful `107574313`
-5. `bash-bros` — Bash Bros Tee (black) — Proverbs 27:17 / Iron Sharpens Iron — Printful Bella+Canvas `107631980`
-6. `born-for-adversity` — Born for Adversity Tee (black) — Proverbs 17:17 — Printful `107599661`
+**Tees** ($39.99, sizes S–5XL, multi-color Gildan 5000-style blanks):
+
+1. `stay-blessed` — Stay Blessed Tee (default Sand)
+2. `snacks-plans` — Snacks, Plans & Takeovers Tee (default Black)
+3. `pr-dna` — Puerto Rico In My DNA Tee (default White)
+4. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (default Black) — Printful `107574313`
+5. `bash-bros` — Bash Bros Tee (default Black) — Proverbs 27:17 — Printful `107631980`
+6. `born-for-adversity` — Born for Adversity Tee (default Black) — Proverbs 17:17 — Printful `107599661`
+
+**Hoodies** ($59.99, sizes S–5XL, same artwork, Gildan 18500-style via Printful):
+
+1. `stay-blessed-hoodie`
+2. `snacks-plans-hoodie`
+3. `pr-dna-hoodie`
+4. `freedom-weighs-a-ton-hoodie`
+5. `bash-bros-hoodie`
+6. `born-for-adversity-hoodie`
+
+Blank colors (tees + hoodies): Black, White, Navy, Sport Grey, Sand, Red, Forest Green, Charcoal.
 
 Optional: El Gordo Ninja Figure (Shop3d), Rolling Tray (coming soon).
 

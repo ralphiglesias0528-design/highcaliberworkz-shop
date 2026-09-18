@@ -5,7 +5,11 @@ import { useCartStore } from '#/lib/cart-store'
 export function AddToCart({ product }: { product: Product }) {
   const addItem = useCartStore((s) => s.addItem)
   const [size, setSize] = useState(product.sizes?.[2] ?? product.sizes?.[0] ?? '')
-  const [color, setColor] = useState(product.colors?.[0] ?? '')
+  const [color, setColor] = useState(
+    (product.colorLabel && product.colors?.includes(product.colorLabel)
+      ? product.colorLabel
+      : product.colors?.[0]) ?? '',
+  )
   const [added, setAdded] = useState(false)
 
   if (product.buyDisabled || product.comingSoon) {

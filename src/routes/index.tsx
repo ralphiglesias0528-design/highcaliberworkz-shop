@@ -30,7 +30,7 @@ function Home() {
                 to="/shop"
                 className="border border-gold bg-gold px-6 py-3 text-xs font-bold tracking-[0.2em] text-charcoal uppercase transition hover:bg-transparent hover:text-gold"
               >
-                Shop Tees
+                Shop Merch
               </Link>
               <Link
                 to="/character"
