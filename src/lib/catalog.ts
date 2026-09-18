@@ -39,7 +39,7 @@ export const GARMENT_COLORS = [
   'Charcoal',
 ] as const
 
-/** Shop apparel — tees + matching hoodies. Stay Blessed through Born for Adversity. */
+/** Shop apparel — tees + matching hoodies. Stay Blessed through Clock In. Square Up. */
 export const products: Product[] = [
   {
     id: 'stay-blessed',
@@ -149,6 +149,24 @@ export const products: Product[] = [
     printfulTemplateId: '107633038',
   },
 
+  {
+    id: 'clock-in-square-up',
+    slug: 'clock-in-square-up',
+    name: 'Clock In. Square Up. Tee',
+    description:
+      'El Gordo Ninja MMA cage — CLOCK IN. SQUARE UP. Full back art, left-chest High Caliber circular logo with PR flag. Bella+Canvas 3001 via Printful.',
+    price: 39.99,
+    images: [
+      asset('/images/clock-in-front.png'),
+      asset('/images/clock-in-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['combat', 'el-gordo', 'mma', 'cage', 'high-caliber', 'clock-in'],
+  },
+
   // --- Hoodies (same artwork as matching tees; hoodie silhouette mockups) ---
   {
     id: 'stay-blessed-hoodie',
@@ -248,6 +266,23 @@ export const products: Product[] = [
     sizes: [...HOODIE_SIZES],
     category: 'hoodie',
     tags: ['brotherhood', 'faith', 'friends', 'proverbs'],
+  },
+  {
+    id: 'clock-in-square-up-hoodie',
+    slug: 'clock-in-square-up-hoodie',
+    name: 'Clock In. Square Up. Hoodie',
+    description:
+      'Same El Gordo Ninja MMA cage artwork as the Clock In. Square Up. tee — CLOCK IN. SQUARE UP. — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest High Caliber logo. Pick your blank color.',
+    price: 59.99,
+    images: [
+      asset('/images/clock-in-front.png'),
+      asset('/images/clock-in-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...HOODIE_SIZES],
+    category: 'hoodie',
+    tags: ['combat', 'el-gordo', 'mma', 'cage', 'high-caliber', 'clock-in'],
   },
 ]
 
