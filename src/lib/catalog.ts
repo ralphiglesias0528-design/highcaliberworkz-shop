@@ -107,7 +107,7 @@ export const products: Product[] = [
     colorLabel: 'Black',
     sizes: [...TEE_SIZES],
     category: 'tee',
-    printfulTemplateId: '107574313',
+    printfulTemplateId: '107633202',
   },
   {
     id: 'bash-bros',
