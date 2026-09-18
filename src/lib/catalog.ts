@@ -81,7 +81,7 @@ export const products: Product[] = [
     slug: 'pr-dna',
     name: 'Puerto Rico In My DNA Tee',
     description:
-      'Island blood, city streets. For the ones who carry Boricua DNA wherever they go. Gildan 5000-style heavy cotton via Printful; pick your blank color.',
+      'Island blood, city streets. For the ones who carry Boricua DNA wherever they go. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/pr-dna-front.png'),
@@ -91,13 +91,14 @@ export const products: Product[] = [
     colorLabel: 'White',
     sizes: [...TEE_SIZES],
     category: 'tee',
+    printfulTemplateId: '107633575',
   },
   {
     id: 'freedom-weighs-a-ton',
     slug: 'freedom-weighs-a-ton',
     name: 'Freedom Weighs a Ton Tee',
     description:
-      'Freedom Weighs a Ton — full front art and High Caliber logo at the nape. Gildan 5000-style heavy cotton via Printful; pick your blank color.',
+      'Freedom Weighs a Ton — full front art and High Caliber logo at the nape. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/freedom-weighs-front-shirt.png'),
@@ -116,7 +117,7 @@ export const products: Product[] = [
     slug: 'bash-bros',
     name: 'Bash Bros Tee',
     description:
-      'Iron sharpens iron. Spotter energy — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Gildan 5000-style via Printful; pick your blank color.',
+      'Iron sharpens iron. Spotter energy — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/bash-bros-front.png'),
@@ -134,7 +135,7 @@ export const products: Product[] = [
     slug: 'born-for-adversity',
     name: 'Born for Adversity Tee',
     description:
-      'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17. Gildan 5000-style via Printful; pick your blank color.',
+      'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/born-for-adversity-front.png'),
