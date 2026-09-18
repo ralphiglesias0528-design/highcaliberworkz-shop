@@ -149,17 +149,17 @@ export const products: Product[] = [
     printfulTemplateId: '107633038',
   },
 
-  // --- Hoodies (same artwork as matching tees; tee mockups until hoodie mocks land) ---
+  // --- Hoodies (same artwork as matching tees; hoodie silhouette mockups) ---
   {
     id: 'stay-blessed-hoodie',
     slug: 'stay-blessed-hoodie',
     name: 'Stay Blessed Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Stay Blessed tee — faith, family, hustle, progress — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Images show the tee print for now; hoodie mockups coming later. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Stay Blessed tee — faith, family, hustle, progress — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Pick your blank color.',
     price: 59.99,
     images: [
-      asset('/images/stay-blessed-front.png'),
-      asset('/images/stay-blessed-back.png'),
+      asset('/images/stay-blessed-hoodie-back.png'),
+      asset('/images/stay-blessed-hoodie-front.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Sand',
@@ -172,11 +172,11 @@ export const products: Product[] = [
     slug: 'snacks-plans-hoodie',
     name: 'Snacks, Plans & Takeovers Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Snacks, Plans & Takeovers tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Images show the tee print for now; hoodie mockups coming later. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Snacks, Plans & Takeovers tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Front chest lettering + full back art. Pick your blank color.',
     price: 59.99,
     images: [
-      asset('/images/snacks-plans-front.png'),
-      asset('/images/snacks-plans-back.png'),
+      asset('/images/snacks-plans-hoodie-front.png'),
+      asset('/images/snacks-plans-hoodie-back.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
@@ -188,11 +188,11 @@ export const products: Product[] = [
     slug: 'pr-dna-hoodie',
     name: 'Puerto Rico In My DNA Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Puerto Rico In My DNA tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Images show the tee print for now; hoodie mockups coming later. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Puerto Rico In My DNA tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber nape logo on back. Pick your blank color.',
     price: 59.99,
     images: [
-      asset('/images/pr-dna-front.png'),
-      asset('/images/pr-dna-back.png'),
+      asset('/images/pr-dna-hoodie-front.png'),
+      asset('/images/pr-dna-hoodie-back.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'White',
@@ -204,13 +204,11 @@ export const products: Product[] = [
     slug: 'freedom-weighs-a-ton-hoodie',
     name: 'Freedom Weighs a Ton Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Freedom Weighs a Ton tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Images show the tee print for now; hoodie mockups coming later. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Freedom Weighs a Ton tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber nape logo on back. Pick your blank color.',
     price: 59.99,
     images: [
-      asset('/images/freedom-weighs-front-shirt.png'),
-      asset('/images/freedom-weighs-back-nape.png'),
-      asset('/images/freedom-weighs-shirt.png'),
-      asset('/images/freedom-weighs-back-shirt.png'),
+      asset('/images/freedom-weighs-hoodie-front.png'),
+      asset('/images/freedom-weighs-hoodie-back.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
@@ -222,11 +220,11 @@ export const products: Product[] = [
     slug: 'bash-bros-hoodie',
     name: 'Bash Bros Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Bash Bros tee — Proverbs 27:17 / iron sharpens iron — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Images show the tee print for now; hoodie mockups coming later. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Bash Bros tee — Proverbs 27:17 / iron sharpens iron — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Pick your blank color.',
     price: 59.99,
     images: [
-      asset('/images/bash-bros-front.png'),
-      asset('/images/bash-bros-back.png'),
+      asset('/images/bash-bros-hoodie-back.png'),
+      asset('/images/bash-bros-hoodie-front.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
@@ -239,11 +237,11 @@ export const products: Product[] = [
     slug: 'born-for-adversity-hoodie',
     name: 'Born for Adversity Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Born for Adversity tee — Proverbs 17:17 — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Images show the tee print for now; hoodie mockups coming later. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Born for Adversity tee — Proverbs 17:17 — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Pick your blank color.',
     price: 59.99,
     images: [
-      asset('/images/born-for-adversity-front.png'),
-      asset('/images/born-for-adversity-back.png'),
+      asset('/images/born-for-adversity-hoodie-back.png'),
+      asset('/images/born-for-adversity-hoodie-front.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
