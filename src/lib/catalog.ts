@@ -220,7 +220,7 @@ export const products: Product[] = [
     slug: 'bash-bros-hoodie',
     name: 'Bash Bros Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Bash Bros tee — Proverbs 27:17 / iron sharpens iron — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Pick your blank color.',
+      'Bash Bros on a heavy hoodie — Proverbs 27:17 / iron sharpens iron. Full original back art + left-chest High Caliber logo. Pick your blank color.',
     price: 59.99,
     images: [
       asset('/images/bash-bros-hoodie-back.png'),
