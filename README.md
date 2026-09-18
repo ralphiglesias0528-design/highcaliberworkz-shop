@@ -42,7 +42,7 @@ npm run preview
 
 **Tees** ($39.99, sizes S–5XL, multi-color Gildan 5000-style blanks):
 
-1. `stay-blessed` — Stay Blessed Tee (default Sand)
+1. `stay-blessed` — Printful Bella+Canvas `107633376` — Stay Blessed Tee (default Sand)
 2. `snacks-plans` — Snacks, Plans & Takeovers Tee (default Black)
 3. `pr-dna` — Puerto Rico In My DNA Tee (default White)
 4. `freedom-weighs-a-ton` — Freedom Weighs a Ton Tee (default Black) — Printful Bella+Canvas `107633202`
