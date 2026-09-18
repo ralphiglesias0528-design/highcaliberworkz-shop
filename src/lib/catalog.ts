@@ -20,7 +20,7 @@ export type Product = {
   buyDisabled?: boolean
 }
 
-export const TEE_SIZES = ['S', 'M', 'L', 'XL', '2XL'] as const
+export const TEE_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL'] as const
 
 /** Shop tees only — Stay Blessed through Born for Adversity. */
 export const products: Product[] = [
