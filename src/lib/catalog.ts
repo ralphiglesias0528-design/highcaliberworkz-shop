@@ -275,8 +275,8 @@ export const products: Product[] = [
       'Same El Gordo Ninja MMA cage artwork as the Clock In. Square Up. tee — CLOCK IN. SQUARE UP. — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest High Caliber logo. Pick your blank color.',
     price: 59.99,
     images: [
-      asset('/images/clock-in-back.png'),
-      asset('/images/clock-in-front.png'),
+      asset('/images/clock-in-hoodie-back.png'),
+      asset('/images/clock-in-hoodie-front.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
