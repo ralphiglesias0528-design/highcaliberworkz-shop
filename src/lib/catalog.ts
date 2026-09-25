@@ -172,7 +172,7 @@ export const products: Product[] = [
     slug: 'bori-ninja-tee',
     name: 'Bori Ninja Tee',
     description:
-      'Boricua pride that hits like a water cannon. El Gordo Ninja on the rock with the Bori crown, High Caliber belt and PR flag headband — front art, El Gordo Ninja logo on the back. Bella+Canvas 3001 via Printful.',
+      'Boricua pride that hits like a water cannon. El Gordo Ninja on the rock with the Bori crown, High Caliber belt and PR flag headband — front art, High Caliber Logo at the top of the back. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/bori-ninja-front.png'),
@@ -189,7 +189,7 @@ export const products: Product[] = [
     slug: 'tiburon-ninja-tee',
     name: 'Tiburón Ninja Tee',
     description:
-      'Tiburón Ninja — shark-headed El Gordo with the PR flag headband, karambits and shark-face kicks, straight off the San Juan waterfront. Front art, El Gordo Ninja logo on the back. Bella+Canvas 3001 via Printful.',
+      'Tiburón Ninja — shark-headed El Gordo with the PR flag headband, karambits and shark-face kicks, straight off the San Juan waterfront. Front art, High Caliber Logo at the top of the back. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/tiburon-ninja-front.png'),
@@ -206,7 +206,7 @@ export const products: Product[] = [
     slug: 'vejigante-ninja-tee',
     name: 'Vejigante Ninja Tee',
     description:
-      'El Gordo in red, white and blue with the vejigante spirit at his back — Boricua tradition, High Caliber energy. Front art, El Gordo Ninja logo on the back. Bella+Canvas 3001 via Printful.',
+      'El Gordo in red, white and blue with the vejigante spirit at his back — Boricua tradition, High Caliber energy. Front art, High Caliber Logo at the top of the back. Bella+Canvas 3001 via Printful.',
     price: 39.99,
     images: [
       asset('/images/vejigante-ninja-front.png'),
@@ -358,7 +358,7 @@ export const products: Product[] = [
     slug: 'bori-ninja-hoodie',
     name: 'Bori Ninja Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Bori Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + El Gordo Ninja logo on the back. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Bori Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber Logo at the top of the back. Pick your blank color.',
     price: 59.99,
     images: [
       asset('/images/bori-ninja-hoodie-front.png'),
@@ -375,7 +375,7 @@ export const products: Product[] = [
     slug: 'tiburon-ninja-hoodie',
     name: 'Tiburón Ninja Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Tiburón Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + El Gordo Ninja logo on the back. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Tiburón Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber Logo at the top of the back. Pick your blank color.',
     price: 59.99,
     images: [
       asset('/images/tiburon-ninja-hoodie-front.png'),
@@ -392,7 +392,7 @@ export const products: Product[] = [
     slug: 'vejigante-ninja-hoodie',
     name: 'Vejigante Ninja Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Vejigante Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + El Gordo Ninja logo on the back. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Vejigante Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber Logo at the top of the back. Pick your blank color.',
     price: 59.99,
     images: [
       asset('/images/vejigante-ninja-hoodie-front.png'),
