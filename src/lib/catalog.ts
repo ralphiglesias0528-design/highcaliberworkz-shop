@@ -181,6 +181,7 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['el-gordo', 'boricua', 'water', 'high-caliber', 'bori'],
+    printfulTemplateId: '107945394',
   },
   {
     id: 'tiburon-ninja-tee',
@@ -198,6 +199,7 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['el-gordo', 'boricua', 'shark', 'high-caliber', 'bori'],
+    printfulTemplateId: '107945777',
   },
   {
     id: 'vejigante-ninja-tee',
@@ -215,6 +217,7 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['el-gordo', 'boricua', 'vejigante', 'high-caliber', 'bori'],
+    printfulTemplateId: '107946274',
   },
   {
     id: 'high-caliber-classic-tee',
@@ -232,6 +235,7 @@ export const products: Product[] = [
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['high-caliber', 'classic', 'el-gordo', 'boricua'],
+    printfulTemplateId: '107946692',
   },
 
   // --- Hoodies (same artwork as matching tees; hoodie silhouette mockups) ---
@@ -367,6 +371,7 @@ export const products: Product[] = [
     sizes: [...HOODIE_SIZES],
     category: 'hoodie',
     tags: ['el-gordo', 'boricua', 'water', 'high-caliber', 'bori'],
+    printfulTemplateId: '107946990',
   },
   {
     id: 'tiburon-ninja-hoodie',
@@ -384,6 +389,7 @@ export const products: Product[] = [
     sizes: [...HOODIE_SIZES],
     category: 'hoodie',
     tags: ['el-gordo', 'boricua', 'shark', 'high-caliber', 'bori'],
+    printfulTemplateId: '107947119',
   },
   {
     id: 'vejigante-ninja-hoodie',
@@ -401,6 +407,7 @@ export const products: Product[] = [
     sizes: [...HOODIE_SIZES],
     category: 'hoodie',
     tags: ['el-gordo', 'boricua', 'vejigante', 'high-caliber', 'bori'],
+    printfulTemplateId: '107947407',
   },
 ]
 
