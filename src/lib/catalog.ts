@@ -47,7 +47,7 @@ export const products: Product[] = [
     name: 'Stay Blessed Tee',
     description:
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut. Bella+Canvas 3001 Soft Cream via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/stay-blessed-front.png'),
       asset('/images/stay-blessed-back.png'),
@@ -65,7 +65,7 @@ export const products: Product[] = [
     name: 'Snacks, Plans & Takeovers Tee',
     description:
       'Fuel up, map it out, then take the block. Late nights and bigger moves. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/snacks-plans-front.png'),
       asset('/images/snacks-plans-back.png'),
@@ -82,7 +82,7 @@ export const products: Product[] = [
     name: 'Puerto Rico In My DNA Tee',
     description:
       'Island blood, city streets. For the ones who carry Boricua DNA wherever they go. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/pr-dna-front.png'),
       asset('/images/pr-dna-back.png'),
@@ -99,7 +99,7 @@ export const products: Product[] = [
     name: 'Freedom Weighs a Ton Tee',
     description:
       'Freedom Weighs a Ton — full front art and High Caliber logo at the nape. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/freedom-weighs-front-shirt.png'),
       asset('/images/freedom-weighs-back-nape.png'),
@@ -116,7 +116,7 @@ export const products: Product[] = [
     name: 'Bash Bros Tee',
     description:
       'Iron sharpens iron. Spotter energy — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/bash-bros-front.png'),
       asset('/images/bash-bros-back.png'),
@@ -134,7 +134,7 @@ export const products: Product[] = [
     name: 'Born for Adversity Tee',
     description:
       'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/born-for-adversity-front.png'),
       asset('/images/born-for-adversity-back.png'),
@@ -153,7 +153,7 @@ export const products: Product[] = [
     name: 'Clock In. Square Up. Tee',
     description:
       'El Gordo Ninja MMA cage — CLOCK IN. SQUARE UP. Full back art, left-chest High Caliber circular logo with PR flag. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/clock-in-back.png'),
       asset('/images/clock-in-front.png'),
@@ -171,7 +171,7 @@ export const products: Product[] = [
     name: 'Bori Ninja Tee',
     description:
       'Boricua pride that hits like a water cannon. El Gordo Ninja on the rock with the Bori crown, High Caliber belt and PR flag headband — front art, High Caliber Logo at the top of the back. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/bori-ninja-front.png'),
       asset('/images/bori-ninja-back.png'),
@@ -189,7 +189,7 @@ export const products: Product[] = [
     name: 'Tiburón Ninja Tee',
     description:
       'Tiburón Ninja — shark-headed El Gordo with the PR flag headband, karambits and shark-face kicks, straight off the San Juan waterfront. Front art, High Caliber Logo at the top of the back. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/tiburon-ninja-front.png'),
       asset('/images/tiburon-ninja-back.png'),
@@ -207,7 +207,7 @@ export const products: Product[] = [
     name: 'Vejigante Ninja Tee',
     description:
       'El Gordo in red, white and blue with the vejigante spirit at his back — Boricua tradition, High Caliber energy. Front art, High Caliber Logo at the top of the back. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/vejigante-ninja-front.png'),
       asset('/images/vejigante-ninja-back.png'),
@@ -225,7 +225,7 @@ export const products: Product[] = [
     name: 'High Caliber Classic Tee',
     description:
       'Clean and simple — gold High Caliber left-chest hit up front, the High Caliber Logo (El Gordo Ninja on the PR flag badge) at the top of the back. Bella+Canvas 3001 via Printful.',
-    price: 39.99,
+    price: 35.00,
     images: [
       asset('/images/high-caliber-classic-front.png'),
       asset('/images/high-caliber-classic-back.png'),
@@ -245,7 +245,7 @@ export const products: Product[] = [
     name: 'Stay Blessed Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Stay Blessed tee — faith, family, hustle, progress — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/stay-blessed-hoodie-back.png'),
       asset('/images/stay-blessed-hoodie-front.png'),
@@ -262,7 +262,7 @@ export const products: Product[] = [
     name: 'Snacks, Plans & Takeovers Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Snacks, Plans & Takeovers tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Front chest lettering + full back art. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/snacks-plans-hoodie-front.png'),
       asset('/images/snacks-plans-hoodie-back.png'),
@@ -278,7 +278,7 @@ export const products: Product[] = [
     name: 'Puerto Rico In My DNA Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Puerto Rico In My DNA tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber nape logo on back. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/pr-dna-hoodie-front.png'),
       asset('/images/pr-dna-hoodie-back.png'),
@@ -294,7 +294,7 @@ export const products: Product[] = [
     name: 'Freedom Weighs a Ton Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Freedom Weighs a Ton tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber nape logo on back. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/freedom-weighs-hoodie-front.png'),
       asset('/images/freedom-weighs-hoodie-back.png'),
@@ -310,7 +310,7 @@ export const products: Product[] = [
     name: 'Bash Bros Hoodie',
     description:
       'Bash Bros on a heavy hoodie — Proverbs 27:17 / iron sharpens iron. Full original back art + left-chest High Caliber logo. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/bash-bros-hoodie-back.png'),
       asset('/images/bash-bros-hoodie-front.png'),
@@ -327,7 +327,7 @@ export const products: Product[] = [
     name: 'Born for Adversity Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Born for Adversity tee — Proverbs 17:17 — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/born-for-adversity-hoodie-back.png'),
       asset('/images/born-for-adversity-hoodie-front.png'),
@@ -344,7 +344,7 @@ export const products: Product[] = [
     name: 'Clock In. Square Up. Hoodie',
     description:
       'Same El Gordo Ninja MMA cage artwork as the Clock In. Square Up. tee — CLOCK IN. SQUARE UP. — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest High Caliber logo. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/clock-in-hoodie-back.png'),
       asset('/images/clock-in-hoodie-front.png'),
@@ -361,7 +361,7 @@ export const products: Product[] = [
     name: 'Bori Ninja Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Bori Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber Logo at the top of the back. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/bori-ninja-hoodie-front.png'),
       asset('/images/bori-ninja-hoodie-back.png'),
@@ -379,7 +379,7 @@ export const products: Product[] = [
     name: 'Tiburón Ninja Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Tiburón Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber Logo at the top of the back. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/tiburon-ninja-hoodie-front.png'),
       asset('/images/tiburon-ninja-hoodie-back.png'),
@@ -397,7 +397,7 @@ export const products: Product[] = [
     name: 'Vejigante Ninja Hoodie',
     description:
       'Same El Gordo / High Caliber artwork as the Vejigante Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + High Caliber Logo at the top of the back. Pick your blank color.',
-    price: 59.99,
+    price: 55.00,
     images: [
       asset('/images/vejigante-ninja-hoodie-front.png'),
       asset('/images/vejigante-ninja-hoodie-back.png'),
