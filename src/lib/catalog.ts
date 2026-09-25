@@ -218,6 +218,23 @@ export const products: Product[] = [
     category: 'tee',
     tags: ['el-gordo', 'boricua', 'vejigante', 'high-caliber', 'bori'],
   },
+  {
+    id: 'high-caliber-classic-tee',
+    slug: 'high-caliber-classic-tee',
+    name: 'High Caliber Classic Tee',
+    description:
+      'Clean and simple — gold High Caliber left-chest hit up front, the High Caliber Logo (El Gordo Ninja on the PR flag badge) at the top of the back. Bella+Canvas 3001 via Printful.',
+    price: 39.99,
+    images: [
+      asset('/images/high-caliber-classic-front.png'),
+      asset('/images/high-caliber-classic-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['high-caliber', 'classic', 'el-gordo', 'boricua'],
+  },
 
   // --- Hoodies (same artwork as matching tees; hoodie silhouette mockups) ---
   {
