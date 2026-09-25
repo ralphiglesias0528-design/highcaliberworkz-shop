@@ -103,8 +103,6 @@ export const products: Product[] = [
     images: [
       asset('/images/freedom-weighs-front-shirt.png'),
       asset('/images/freedom-weighs-back-nape.png'),
-      asset('/images/freedom-weighs-shirt.png'),
-      asset('/images/freedom-weighs-back-shirt.png'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
