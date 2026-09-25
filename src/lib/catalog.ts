@@ -167,6 +167,58 @@ export const products: Product[] = [
     tags: ['combat', 'el-gordo', 'mma', 'cage', 'high-caliber', 'clock-in'],
   },
 
+  {
+    id: 'bori-ninja-tee',
+    slug: 'bori-ninja-tee',
+    name: 'Bori Ninja Tee',
+    description:
+      'Boricua pride that hits like a water cannon. El Gordo Ninja on the rock with the Bori crown, High Caliber belt and PR flag headband — front art, El Gordo Ninja logo on the back. Bella+Canvas 3001 via Printful.',
+    price: 39.99,
+    images: [
+      asset('/images/bori-ninja-front.png'),
+      asset('/images/bori-ninja-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['el-gordo', 'boricua', 'water', 'high-caliber', 'bori'],
+  },
+  {
+    id: 'tiburon-ninja-tee',
+    slug: 'tiburon-ninja-tee',
+    name: 'Tiburón Ninja Tee',
+    description:
+      'Tiburón Ninja — shark-headed El Gordo with the PR flag headband, karambits and shark-face kicks, straight off the San Juan waterfront. Front art, El Gordo Ninja logo on the back. Bella+Canvas 3001 via Printful.',
+    price: 39.99,
+    images: [
+      asset('/images/tiburon-ninja-front.png'),
+      asset('/images/tiburon-ninja-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['el-gordo', 'boricua', 'shark', 'high-caliber', 'bori'],
+  },
+  {
+    id: 'vejigante-ninja-tee',
+    slug: 'vejigante-ninja-tee',
+    name: 'Vejigante Ninja Tee',
+    description:
+      'El Gordo in red, white and blue with the vejigante spirit at his back — Boricua tradition, High Caliber energy. Front art, El Gordo Ninja logo on the back. Bella+Canvas 3001 via Printful.',
+    price: 39.99,
+    images: [
+      asset('/images/vejigante-ninja-front.png'),
+      asset('/images/vejigante-ninja-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['el-gordo', 'boricua', 'vejigante', 'high-caliber', 'bori'],
+  },
+
   // --- Hoodies (same artwork as matching tees; hoodie silhouette mockups) ---
   {
     id: 'stay-blessed-hoodie',
@@ -283,6 +335,57 @@ export const products: Product[] = [
     sizes: [...HOODIE_SIZES],
     category: 'hoodie',
     tags: ['combat', 'el-gordo', 'mma', 'cage', 'high-caliber', 'clock-in'],
+  },
+  {
+    id: 'bori-ninja-hoodie',
+    slug: 'bori-ninja-hoodie',
+    name: 'Bori Ninja Hoodie',
+    description:
+      'Same El Gordo / High Caliber artwork as the Bori Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + El Gordo Ninja logo on the back. Pick your blank color.',
+    price: 59.99,
+    images: [
+      asset('/images/bori-ninja-hoodie-front.png'),
+      asset('/images/bori-ninja-hoodie-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...HOODIE_SIZES],
+    category: 'hoodie',
+    tags: ['el-gordo', 'boricua', 'water', 'high-caliber', 'bori'],
+  },
+  {
+    id: 'tiburon-ninja-hoodie',
+    slug: 'tiburon-ninja-hoodie',
+    name: 'Tiburón Ninja Hoodie',
+    description:
+      'Same El Gordo / High Caliber artwork as the Tiburón Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + El Gordo Ninja logo on the back. Pick your blank color.',
+    price: 59.99,
+    images: [
+      asset('/images/tiburon-ninja-hoodie-front.png'),
+      asset('/images/tiburon-ninja-hoodie-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...HOODIE_SIZES],
+    category: 'hoodie',
+    tags: ['el-gordo', 'boricua', 'shark', 'high-caliber', 'bori'],
+  },
+  {
+    id: 'vejigante-ninja-hoodie',
+    slug: 'vejigante-ninja-hoodie',
+    name: 'Vejigante Ninja Hoodie',
+    description:
+      'Same El Gordo / High Caliber artwork as the Vejigante Ninja Tee on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large front art + El Gordo Ninja logo on the back. Pick your blank color.',
+    price: 59.99,
+    images: [
+      asset('/images/vejigante-ninja-hoodie-front.png'),
+      asset('/images/vejigante-ninja-hoodie-back.png'),
+    ],
+    colors: [...GARMENT_COLORS],
+    colorLabel: 'Black',
+    sizes: [...HOODIE_SIZES],
+    category: 'hoodie',
+    tags: ['el-gordo', 'boricua', 'vejigante', 'high-caliber', 'bori'],
   },
 ]
 
