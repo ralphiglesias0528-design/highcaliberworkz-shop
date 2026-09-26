@@ -46,18 +46,18 @@ export const products: Product[] = [
     slug: 'stay-blessed',
     name: 'Stay Blessed Tee',
     description:
-      'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut. Bella+Canvas 3001 Soft Cream via Printful.',
+      'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut. Black Bella+Canvas 3001 with white lettering via Printful.',
     price: 35.00,
     images: [
-      asset('/images/stay-blessed-front.png'),
-      asset('/images/stay-blessed-back.png'),
+      asset('/images/stay-blessed-black-back.png'),
+      asset('/images/stay-blessed-black-front.png'),
     ],
     colors: [...GARMENT_COLORS],
-    colorLabel: 'Sand',
+    colorLabel: 'Black',
     sizes: [...TEE_SIZES],
     category: 'tee',
     tags: ['faith', 'family', 'hustle', 'progress'],
-    printfulTemplateId: '107633376',
+    printfulTemplateId: '107979474',
   },
   {
     id: 'snacks-plans',
