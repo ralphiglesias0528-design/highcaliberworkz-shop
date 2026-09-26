@@ -14,8 +14,7 @@ function CharacterPage() {
       </h1>
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-zinc-400">
         Street silhouette. Island swagger. El Gordo Ninja is the face of the
-        High Caliber universe — figure sheet ready, Shop3d lane open. Merch
-        labels stay El Gordo Ninja or High Caliber. Never Workz on the art.
+        High Caliber universe — figure sheet ready, Shop3d lane open.
       </p>
 
       <div className="mt-10 overflow-hidden border border-gold/30 bg-black">

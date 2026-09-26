@@ -42,7 +42,6 @@ export function Footer() {
           <p className="text-xs tracking-[0.2em] text-pr-red uppercase">Note</p>
           <p className="mt-3 text-sm text-zinc-500">
             Checkout is dry-run only — no charges. Cart saves in your browser.
-            Merch art is High Caliber / El Gordo Ninja only.
           </p>
         </div>
       </div>

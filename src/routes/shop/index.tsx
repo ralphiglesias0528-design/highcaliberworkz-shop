@@ -20,9 +20,8 @@ function ShopPage() {
           Shop
         </h1>
         <p className="mt-3 max-w-xl text-sm text-zinc-500">
-          {tees.length} tees, {hoodies.length} hoodies and {headwear.length} beanies. Same High Caliber and El Gordo Ninja art —
-          never Workz lettering on the drops. Multiple blank colors, sizes
-          through 5XL.
+          {tees.length} tees, {hoodies.length} hoodies and {headwear.length} beanies. Same High Caliber and El Gordo Ninja art
+          across the drops. Multiple blank colors, sizes through 5XL.
         </p>
       </div>
 
