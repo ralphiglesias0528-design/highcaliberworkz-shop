@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { getShopTees, getShopHoodies, optionalProducts } from '#/lib/catalog'
+import { getShopTees, getShopHoodies, getShopHeadwear, optionalProducts } from '#/lib/catalog'
 import { ProductCard } from '#/components/ProductCard'
 
 export const Route = createFileRoute('/shop/')({ component: ShopPage })
@@ -7,6 +7,7 @@ export const Route = createFileRoute('/shop/')({ component: ShopPage })
 function ShopPage() {
   const tees = getShopTees()
   const hoodies = getShopHoodies()
+  const headwear = getShopHeadwear()
   const extras = optionalProducts
 
   return (
@@ -19,7 +20,7 @@ function ShopPage() {
           Shop
         </h1>
         <p className="mt-3 max-w-xl text-sm text-zinc-500">
-          {tees.length} tees and {hoodies.length} hoodies. Same High Caliber and El Gordo Ninja art —
+          {tees.length} tees, {hoodies.length} hoodies and {headwear.length} beanies. Same High Caliber and El Gordo Ninja art —
           never Workz lettering on the drops. Multiple blank colors, sizes
           through 5XL.
         </p>
@@ -39,6 +40,15 @@ function ShopPage() {
       </h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {hoodies.map((p) => (
+          <ProductCard key={p.id} product={p} />
+        ))}
+      </div>
+
+      <h2 className="mt-14 mb-4 text-xs tracking-[0.25em] text-zinc-500 uppercase">
+        Beanies ({headwear.length})
+      </h2>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {headwear.map((p) => (
           <ProductCard key={p.id} product={p} />
         ))}
       </div>

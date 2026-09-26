@@ -1,6 +1,6 @@
 import { asset } from '#/lib/asset'
 
-export type ProductCategory = 'tee' | 'hoodie' | 'figure' | 'accessory'
+export type ProductCategory = 'tee' | 'hoodie' | 'headwear' | 'figure' | 'accessory'
 
 export type Product = {
   id: string
@@ -23,6 +23,8 @@ export type Product = {
 /** S–5XL — Printful Gildan 5000 / 18500 range. */
 export const TEE_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL'] as const
 export const HOODIE_SIZES = TEE_SIZES
+/** Beanies — one size fits most. */
+export const BEANIE_SIZES = ['One Size'] as const
 
 /**
  * Classic Gildan palette carried on Printful for Gildan 5000 (tee)
@@ -409,6 +411,77 @@ export const products: Product[] = [
     tags: ['el-gordo', 'boricua', 'vejigante', 'high-caliber', 'bori'],
     printfulTemplateId: '107947407',
   },
+
+  // --- Headwear (black beanies, gold High Caliber crown logo embroidered on the front cuff) ---
+  {
+    id: 'high-caliber-3d-puff-cuffed-beanie',
+    slug: 'high-caliber-3d-puff-cuffed-beanie',
+    name: 'High Caliber 3D Puff Cuffed Beanie',
+    description:
+      'Gold High Caliber crown logo in raised 3D puff embroidery on the front cuff — thick, dimensional stitching that pops off the knit. Black Yupoong 1501KC cuffed beanie via Printful. One size.',
+    price: 28.00,
+    images: [
+      asset('/images/beanie-puff-cuffed-black.png'),
+      asset('/images/beanie-puff-cuffed-black-lifestyle.png'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...BEANIE_SIZES],
+    category: 'headwear',
+    tags: ['high-caliber', 'beanie', '3d-puff', 'embroidered'],
+    printfulTemplateId: '107983983',
+  },
+  {
+    id: 'high-caliber-waffle-beanie',
+    slug: 'high-caliber-waffle-beanie',
+    name: 'High Caliber Waffle Beanie',
+    description:
+      'Waffle-knit texture with the gold High Caliber crown logo embroidered on the front cuff. Black Richardson 146R waffle beanie via Printful. One size.',
+    price: 30.00,
+    images: [
+      asset('/images/beanie-waffle-black.png'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...BEANIE_SIZES],
+    category: 'headwear',
+    tags: ['high-caliber', 'beanie', 'waffle', 'embroidered'],
+    printfulTemplateId: '107984283',
+  },
+  {
+    id: 'high-caliber-fisherman-beanie',
+    slug: 'high-caliber-fisherman-beanie',
+    name: 'High Caliber Fisherman Beanie',
+    description:
+      'Short-cut fisherman fit, dockside ready — gold High Caliber crown logo embroidered on the front cuff. Black AS Colour 1120 fisherman beanie via Printful. One size.',
+    price: 30.00,
+    images: [
+      asset('/images/beanie-fisherman-black.png'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...BEANIE_SIZES],
+    category: 'headwear',
+    tags: ['high-caliber', 'beanie', 'fisherman', 'embroidered'],
+    printfulTemplateId: '107984394',
+  },
+  {
+    id: 'high-caliber-organic-ribbed-beanie',
+    slug: 'high-caliber-organic-ribbed-beanie',
+    name: 'High Caliber Organic Ribbed Beanie',
+    description:
+      'Soft organic cotton rib knit with the gold High Caliber crown logo embroidered on the front cuff. Black Atlantis organic ribbed beanie via Printful. One size.',
+    price: 32.00,
+    images: [
+      asset('/images/beanie-organic-ribbed-black.png'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...BEANIE_SIZES],
+    category: 'headwear',
+    tags: ['high-caliber', 'beanie', 'organic', 'embroidered'],
+    printfulTemplateId: '107984933',
+  },
 ]
 
 export const optionalProducts: Product[] = [
@@ -444,6 +517,10 @@ export function getShopTees(): Product[] {
 
 export function getShopHoodies(): Product[] {
   return products.filter((p) => p.category === 'hoodie')
+}
+
+export function getShopHeadwear(): Product[] {
+  return products.filter((p) => p.category === 'headwear')
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
