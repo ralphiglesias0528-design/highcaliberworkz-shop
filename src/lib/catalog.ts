@@ -138,7 +138,7 @@ export const products: Product[] = [
       'A friend loves at all times, and a brother is born for a time of adversity. Ninja and bull on the skyline — full back art, left-chest High Caliber logo, Proverbs 17:17. Bella+Canvas 3001 via Printful.',
     price: 35.00,
     images: [
-      asset('/images/born-for-adversity-tee-back.png'),
+      asset('/images/born-for-adversity-tee-back-v2.png'),
       asset('/images/born-for-adversity-front.png'),
     ],
     colors: [...GARMENT_COLORS],
