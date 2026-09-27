@@ -40,7 +40,6 @@ const config = defineConfig({
         { path: '/checkout' },
         { path: '/about' },
         { path: '/character' },
-        { path: '/partners' },
         { path: '/shop/stay-blessed' },
         { path: '/shop/snacks-plans' },
         { path: '/shop/pr-dna' },

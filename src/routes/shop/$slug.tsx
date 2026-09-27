@@ -80,11 +80,6 @@ function ProductPage() {
             </ul>
           )}
 
-          {product.printfulTemplateId && (
-            <p className="mt-4 text-xs text-zinc-600">
-              Printful template: {product.printfulTemplateId}
-            </p>
-          )}
 
           <div className="mt-8">
             <AddToCart product={product} />
