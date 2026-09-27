@@ -15,6 +15,9 @@ import { Route as CartRouteImport } from './routes/cart'
 import { Route as CharacterRouteImport } from './routes/character'
 import { Route as CheckoutRouteImport } from './routes/checkout'
 import { Route as PartnersRouteImport } from './routes/partners'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ReturnsRouteImport } from './routes/returns'
+import { Route as ShippingRouteImport } from './routes/shipping'
 import { Route as ShopIndexRouteImport } from './routes/shop/index'
 import { Route as ShopSlugRouteImport } from './routes/shop/$slug'
 
@@ -48,6 +51,21 @@ const PartnersRoute = PartnersRouteImport.update({
   path: '/partners',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReturnsRoute = ReturnsRouteImport.update({
+  id: '/returns',
+  path: '/returns',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShippingRoute = ShippingRouteImport.update({
+  id: '/shipping',
+  path: '/shipping',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ShopIndexRoute = ShopIndexRouteImport.update({
   id: '/shop/',
   path: '/shop/',
@@ -66,6 +84,9 @@ export interface FileRoutesByFullPath {
   '/character': typeof CharacterRoute
   '/checkout': typeof CheckoutRoute
   '/partners': typeof PartnersRoute
+  '/privacy': typeof PrivacyRoute
+  '/returns': typeof ReturnsRoute
+  '/shipping': typeof ShippingRoute
   '/shop/$slug': typeof ShopSlugRoute
   '/shop/': typeof ShopIndexRoute
 }
@@ -76,6 +97,9 @@ export interface FileRoutesByTo {
   '/character': typeof CharacterRoute
   '/checkout': typeof CheckoutRoute
   '/partners': typeof PartnersRoute
+  '/privacy': typeof PrivacyRoute
+  '/returns': typeof ReturnsRoute
+  '/shipping': typeof ShippingRoute
   '/shop/$slug': typeof ShopSlugRoute
   '/shop': typeof ShopIndexRoute
 }
@@ -87,6 +111,9 @@ export interface FileRoutesById {
   '/character': typeof CharacterRoute
   '/checkout': typeof CheckoutRoute
   '/partners': typeof PartnersRoute
+  '/privacy': typeof PrivacyRoute
+  '/returns': typeof ReturnsRoute
+  '/shipping': typeof ShippingRoute
   '/shop/$slug': typeof ShopSlugRoute
   '/shop/': typeof ShopIndexRoute
 }
@@ -99,6 +126,9 @@ export interface FileRouteTypes {
     | '/character'
     | '/checkout'
     | '/partners'
+    | '/privacy'
+    | '/returns'
+    | '/shipping'
     | '/shop/$slug'
     | '/shop/'
   fileRoutesByTo: FileRoutesByTo
@@ -109,6 +139,9 @@ export interface FileRouteTypes {
     | '/character'
     | '/checkout'
     | '/partners'
+    | '/privacy'
+    | '/returns'
+    | '/shipping'
     | '/shop/$slug'
     | '/shop'
   id:
@@ -119,6 +152,9 @@ export interface FileRouteTypes {
     | '/character'
     | '/checkout'
     | '/partners'
+    | '/privacy'
+    | '/returns'
+    | '/shipping'
     | '/shop/$slug'
     | '/shop/'
   fileRoutesById: FileRoutesById
@@ -130,6 +166,9 @@ export interface RootRouteChildren {
   CharacterRoute: typeof CharacterRoute
   CheckoutRoute: typeof CheckoutRoute
   PartnersRoute: typeof PartnersRoute
+  PrivacyRoute: typeof PrivacyRoute
+  ReturnsRoute: typeof ReturnsRoute
+  ShippingRoute: typeof ShippingRoute
   ShopSlugRoute: typeof ShopSlugRoute
   ShopIndexRoute: typeof ShopIndexRoute
 }
@@ -178,6 +217,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PartnersRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/returns': {
+      id: '/returns'
+      path: '/returns'
+      fullPath: '/returns'
+      preLoaderRoute: typeof ReturnsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shipping': {
+      id: '/shipping'
+      path: '/shipping'
+      fullPath: '/shipping'
+      preLoaderRoute: typeof ShippingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/shop/': {
       id: '/shop/'
       path: '/shop'
@@ -202,6 +262,9 @@ const rootRouteChildren: RootRouteChildren = {
   CharacterRoute: CharacterRoute,
   CheckoutRoute: CheckoutRoute,
   PartnersRoute: PartnersRoute,
+  PrivacyRoute: PrivacyRoute,
+  ReturnsRoute: ReturnsRoute,
+  ShippingRoute: ShippingRoute,
   ShopSlugRoute: ShopSlugRoute,
   ShopIndexRoute: ShopIndexRoute,
 }

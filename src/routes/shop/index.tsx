@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { getShopTees, getShopHoodies, getShopHeadwear, optionalProducts } from '#/lib/catalog'
+import { getShopTees, getShopHoodies, getShopHeadwear, getShopExtras } from '#/lib/catalog'
 import { ProductCard } from '#/components/ProductCard'
 
 export const Route = createFileRoute('/shop/')({ component: ShopPage })
@@ -8,7 +8,7 @@ function ShopPage() {
   const tees = getShopTees()
   const hoodies = getShopHoodies()
   const headwear = getShopHeadwear()
-  const extras = optionalProducts
+  const extras = getShopExtras()
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">

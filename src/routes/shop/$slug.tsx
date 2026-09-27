@@ -40,7 +40,7 @@ function ProductPage() {
             >
               <img
                 src={src}
-                alt={`${product.name} ${i === 0 ? 'primary' : `view ${i + 1}`}`}
+                alt={`${product.name}${product.colorLabel ? ` in ${product.colorLabel}` : ''} — ${i === 0 ? 'primary' : `view ${i + 1}`}`}
                 className="w-full object-contain"
               />
             </div>
@@ -52,6 +52,11 @@ function ProductPage() {
             {product.category}
             {product.colorLabel ? ` · ${product.colorLabel}` : ''}
           </p>
+          {product.comingSoon && (
+            <span className="mt-3 inline-block bg-pr-red px-2 py-1 text-[10px] font-bold tracking-widest text-white uppercase">
+              Coming Soon
+            </span>
+          )}
           <h1 className="font-display mt-2 text-3xl tracking-wide text-zinc-100 uppercase sm:text-4xl">
             {product.name}
           </h1>

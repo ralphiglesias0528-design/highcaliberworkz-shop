@@ -18,6 +18,8 @@ export type Product = {
   externalUrl?: string
   comingSoon?: boolean
   buyDisabled?: boolean
+  /** Hidden products stay in the data for easy restore but are not listed or routable. */
+  hidden?: boolean
 }
 
 /** S–5XL — Printful Gildan 5000 / 18500 range. */
@@ -246,14 +248,14 @@ export const products: Product[] = [
     slug: 'stay-blessed-hoodie',
     name: 'Stay Blessed Hoodie',
     description:
-      'Same El Gordo / High Caliber artwork as the Stay Blessed tee — faith, family, hustle, progress — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Pick your blank color.',
+      'Same El Gordo / High Caliber artwork as the Stay Blessed tee — faith, family, hustle, progress — on a Gildan-style heavy blend hoodie via Printful (Gildan 18500). Large back art + left-chest logo. Shown in Black with white lettering.',
     price: 55.00,
     images: [
       asset('/images/stay-blessed-hoodie-back.png'),
       asset('/images/stay-blessed-hoodie-front.png'),
     ],
     colors: [...GARMENT_COLORS],
-    colorLabel: 'Sand',
+    colorLabel: 'Black',
     sizes: [...HOODIE_SIZES],
     category: 'hoodie',
     tags: ['faith', 'family', 'hustle', 'progress'],
@@ -490,11 +492,13 @@ export const optionalProducts: Product[] = [
     slug: 'el-gordo-figure',
     name: 'El Gordo Ninja Figure',
     description:
-      'El Gordo Ninja — collectible figure. Grab it on Shop3d when drops go live.',
+      'El Gordo Ninja — collectible figure. Coming soon.',
     price: 54,
     images: [asset('/images/el-gordo-figure-sheet.png')],
     category: 'figure',
-    externalUrl: 'https://shop3d.io',
+    // 3D print vendor not confirmed yet — listed, but no add-to-cart.
+    comingSoon: true,
+    buyDisabled: true,
   },
   {
     id: 'rolling-tray',
@@ -508,8 +512,15 @@ export const optionalProducts: Product[] = [
     category: 'accessory',
     comingSoon: true,
     buyDisabled: true,
+    // Hidden from the shop (not listed, not routable). Remove this flag to restore.
+    hidden: true,
   },
 ]
+
+/** Extras shown in the shop's "More" section (hidden products excluded). */
+export function getShopExtras(): Product[] {
+  return optionalProducts.filter((p) => !p.hidden)
+}
 
 export function getShopTees(): Product[] {
   return products.filter((p) => p.category === 'tee')
@@ -524,10 +535,10 @@ export function getShopHeadwear(): Product[] {
 }
 
 export function getProductBySlug(slug: string): Product | undefined {
-  return (
+  const product =
     products.find((p) => p.slug === slug) ??
     optionalProducts.find((p) => p.slug === slug)
-  )
+  return product && !product.hidden ? product : undefined
 }
 
 export function formatPrice(price: number): string {

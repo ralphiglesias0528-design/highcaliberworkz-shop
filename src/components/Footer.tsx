@@ -39,7 +39,25 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-xs tracking-[0.2em] text-pr-red uppercase">Note</p>
+          <p className="text-xs tracking-[0.2em] text-pr-red uppercase">Policies</p>
+          <ul className="mt-3 space-y-2 text-sm text-zinc-400">
+            <li>
+              <Link to="/shipping" className="hover:text-gold">
+                Shipping
+              </Link>
+            </li>
+            <li>
+              <Link to="/returns" className="hover:text-gold">
+                Returns &amp; Exchanges
+              </Link>
+            </li>
+            <li>
+              <Link to="/privacy" className="hover:text-gold">
+                Privacy
+              </Link>
+            </li>
+          </ul>
+          <p className="mt-6 text-xs tracking-[0.2em] text-pr-red uppercase">Note</p>
           <p className="mt-3 text-sm text-zinc-500">
             Checkout is dry-run only — no charges. Cart saves in your browser.
           </p>

@@ -15,7 +15,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="relative aspect-square overflow-hidden bg-black">
         <img
           src={image}
-          alt={product.name}
+          alt={`${product.name}${product.colorLabel ? ` in ${product.colorLabel}` : ''}`}
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
         {disabled && (
