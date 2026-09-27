@@ -14,7 +14,7 @@ function CharacterPage() {
       </h1>
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-zinc-400">
         Street silhouette. Island swagger. El Gordo Ninja is the face of the
-        High Caliber universe — figure sheet ready, Shop3d lane open.
+        High Caliber universe. The El Gordo Ninja collectible figure is coming soon.
       </p>
 
       <div className="mt-10 overflow-hidden border border-gold/30 bg-black">
@@ -33,14 +33,6 @@ function CharacterPage() {
         >
           Figure product
         </Link>
-        <a
-          href="https://shop3d.io"
-          target="_blank"
-          rel="noreferrer"
-          className="border border-pr-red px-6 py-3 text-xs font-bold tracking-[0.2em] text-pr-red uppercase hover:bg-pr-red hover:text-white"
-        >
-          Shop3d
-        </a>
       </div>
     </div>
   )

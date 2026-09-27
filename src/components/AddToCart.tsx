@@ -32,7 +32,7 @@ export function AddToCart({ product }: { product: Product }) {
         rel="noreferrer"
         className="block w-full border border-gold bg-gold px-6 py-3 text-center text-sm font-bold tracking-[0.2em] text-charcoal uppercase transition hover:bg-transparent hover:text-gold"
       >
-        Buy on Shop3d
+        Buy Now
       </a>
     )
   }

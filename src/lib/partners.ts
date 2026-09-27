@@ -18,14 +18,6 @@ export const partners: Partner[] = [
     status: 'active',
   },
   {
-    id: 'shop3d',
-    name: 'Shop3d',
-    role: '3D collectibles',
-    description: 'El Gordo Ninja figure drops and 3D merch storefront.',
-    url: 'https://shop3d.io',
-    status: 'active',
-  },
-  {
     id: 'makeship',
     name: 'Makeship',
     role: 'Limited drops & crowdfunding',
