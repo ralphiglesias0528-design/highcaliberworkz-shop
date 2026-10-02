@@ -26,6 +26,15 @@ for base, (mock, flat) in ITEMS.items():
     else:
         src, out_name = os.path.join(FLAT, flat), f'{base}-art.webp'
     im = Image.open(src)
+    if src == mpath and im.mode == 'RGBA':
+        # Tight-crop the transparent mockup to a square around the garment
+        # (small padding) so it fills the square product cards.
+        l, t, r, b = im.getchannel('A').getbbox()
+        side = int(max(r - l, b - t) * 1.04)
+        cx, cy = (l + r) // 2, (t + b) // 2
+        sq = Image.new('RGBA', (side, side), (0, 0, 0, 0))
+        sq.paste(im.crop((l, t, r, b)), (side // 2 - (cx - l), side // 2 - (cy - t)))
+        im = sq
     im.thumbnail((1200, 1200), Image.LANCZOS)
     dst = os.path.join(OUT, out_name)
     im.save(dst, 'WEBP', quality=85, method=6)

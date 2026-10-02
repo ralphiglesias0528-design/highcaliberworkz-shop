@@ -459,12 +459,13 @@ export const products: Product[] = [
     description:
       'Red bike, PR flag sleeve, crown sneakers on the pegs — riding the El Morro wall at sunset. Boricua and built for the road. Women\'s cotton crop top in black.',
     price: 35.00,
-    images: [asset('/images/la-isla-reina-moto-crop-art.webp')],
+    images: [asset('/images/la-isla-reina-moto-crop-front.webp')],
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: [...CROP_SIZES],
     category: 'crop-top',
     tags: ['la-isla-reina', 'boricua', 'moto', 'el-morro', 'crown'],
+    printfulTemplateId: '108272681',
     collections: ['la-isla-reina'],
   },
   {
@@ -474,12 +475,13 @@ export const products: Product[] = [
     description:
       'Piña colada in hand, posted up on a PR flag cooler in crown sneakers — island time, queen energy. Women\'s cotton crop top in black.',
     price: 35.00,
-    images: [asset('/images/la-isla-reina-pina-colada-crop-art.webp')],
+    images: [asset('/images/la-isla-reina-pina-colada-crop-front.webp')],
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: [...CROP_SIZES],
     category: 'crop-top',
     tags: ['la-isla-reina', 'boricua', 'pina-colada', 'pr-flag', 'crown'],
+    printfulTemplateId: '108272827',
     collections: ['la-isla-reina'],
   },
   {
@@ -489,12 +491,13 @@ export const products: Product[] = [
     description:
       'Rainforest waterfall, El Morro garita in the mist, PR flag on her sleeve. Boricua paradise with a crown on top. Women\'s cotton crop top in black.',
     price: 35.00,
-    images: [asset('/images/la-isla-reina-waterfall-crop-art.webp')],
+    images: [asset('/images/la-isla-reina-waterfall-crop-front.webp')],
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: [...CROP_SIZES],
     category: 'crop-top',
     tags: ['la-isla-reina', 'boricua', 'waterfall', 'el-morro', 'crown'],
+    printfulTemplateId: '108273015',
     collections: ['la-isla-reina'],
   },
 
