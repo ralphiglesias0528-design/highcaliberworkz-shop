@@ -1,11 +1,12 @@
 import { Link, createFileRoute } from '@tanstack/react-router'
-import { getShopTees, formatPrice } from '#/lib/catalog'
+import { getShopTees, getCollectionProducts, formatPrice, LA_ISLA_REINA } from '#/lib/catalog'
 import { asset } from '#/lib/asset'
 
 export const Route = createFileRoute('/')({ component: Home })
 
 function Home() {
   const tees = getShopTees().slice(0, 3)
+  const reina = getCollectionProducts(LA_ISLA_REINA.slug)
 
   return (
     <div>
@@ -47,6 +48,44 @@ function Home() {
               alt="Stay Blessed tee"
               className="relative mx-auto max-h-[420px] w-auto border border-gold/30 object-contain shadow-[0_0_60px_rgba(201,162,39,0.15)]"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-gold/20 bg-gradient-to-r from-pr-red/10 via-transparent to-gold/10">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 lg:grid-cols-[1fr_1.4fr]">
+          <div>
+            <p className="text-[10px] tracking-[0.35em] text-pr-red uppercase">
+              New · Women&apos;s Crop Tops
+            </p>
+            <h2 className="font-display mt-2 text-3xl tracking-wide text-gold uppercase sm:text-4xl">
+              {LA_ISLA_REINA.name}
+            </h2>
+            <p className="font-display mt-3 text-base tracking-wide text-zinc-100 uppercase">
+              {LA_ISLA_REINA.tagline}
+            </p>
+            <Link
+              to="/la-isla-reina"
+              className="mt-6 inline-block border border-gold px-6 py-3 text-xs font-bold tracking-[0.2em] text-gold uppercase transition hover:bg-gold hover:text-charcoal"
+            >
+              Shop La Isla Reina
+            </Link>
+          </div>
+          <div className="grid grid-cols-4 gap-3">
+            {reina.map((p) => (
+              <Link
+                key={p.id}
+                to="/shop/$slug"
+                params={{ slug: p.slug }}
+                className="group aspect-square overflow-hidden border border-white/10 bg-black transition hover:border-gold/40"
+              >
+                <img
+                  src={p.images[0]}
+                  alt={p.name}
+                  className="h-full w-full object-cover transition group-hover:scale-105"
+                />
+              </Link>
+            ))}
           </div>
         </div>
       </section>

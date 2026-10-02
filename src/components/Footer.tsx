@@ -22,6 +22,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link to="/la-isla-reina" className="hover:text-gold">
+                La Isla Reina Line
+              </Link>
+            </li>
+            <li>
               <Link to="/character" className="hover:text-gold">
                 El Gordo Ninja
               </Link>

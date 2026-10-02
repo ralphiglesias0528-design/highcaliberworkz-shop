@@ -4,6 +4,7 @@ import { useCartStore } from '#/lib/cart-store'
 const nav = [
   { to: '/', label: 'Home' },
   { to: '/shop', label: 'Shop' },
+  { to: '/la-isla-reina', label: 'La Isla Reina' },
   { to: '/character', label: 'Character' },
   { to: '/about', label: 'About' },
 ] as const

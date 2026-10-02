@@ -1,5 +1,12 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { getShopTees, getShopHoodies, getShopHeadwear, getShopExtras } from '#/lib/catalog'
+import { Link, createFileRoute } from '@tanstack/react-router'
+import {
+  getShopTees,
+  getShopHoodies,
+  getShopCropTops,
+  getShopHeadwear,
+  getShopExtras,
+  LA_ISLA_REINA,
+} from '#/lib/catalog'
 import { ProductCard } from '#/components/ProductCard'
 
 export const Route = createFileRoute('/shop/')({ component: ShopPage })
@@ -7,6 +14,7 @@ export const Route = createFileRoute('/shop/')({ component: ShopPage })
 function ShopPage() {
   const tees = getShopTees()
   const hoodies = getShopHoodies()
+  const cropTops = getShopCropTops()
   const headwear = getShopHeadwear()
   const extras = getShopExtras()
 
@@ -20,7 +28,7 @@ function ShopPage() {
           Shop
         </h1>
         <p className="mt-3 max-w-xl text-sm text-zinc-500">
-          {tees.length} tees, {hoodies.length} hoodies and {headwear.length} beanies. Same High Caliber and El Gordo Ninja art
+          {tees.length} tees, {hoodies.length} hoodies, {cropTops.length} crop tops and {headwear.length} beanies. Same High Caliber and El Gordo Ninja art
           across the drops. Multiple blank colors, sizes through 5XL.
         </p>
       </div>
@@ -39,6 +47,28 @@ function ShopPage() {
       </h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {hoodies.map((p) => (
+          <ProductCard key={p.id} product={p} />
+        ))}
+      </div>
+
+      <div className="mt-14 mb-4 flex flex-wrap items-end justify-between gap-2">
+        <div>
+          <h2 className="text-xs tracking-[0.25em] text-zinc-500 uppercase">
+            {LA_ISLA_REINA.name} · Crop Tops ({cropTops.length})
+          </h2>
+          <p className="mt-1 text-xs tracking-[0.15em] text-pr-red uppercase">
+            {LA_ISLA_REINA.tagline}
+          </p>
+        </div>
+        <Link
+          to="/la-isla-reina"
+          className="text-xs tracking-[0.2em] text-gold uppercase hover:underline"
+        >
+          View the line →
+        </Link>
+      </div>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {cropTops.map((p) => (
           <ProductCard key={p.id} product={p} />
         ))}
       </div>

@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as CartRouteImport } from './routes/cart'
 import { Route as CharacterRouteImport } from './routes/character'
 import { Route as CheckoutRouteImport } from './routes/checkout'
+import { Route as LaIslaReinaRouteImport } from './routes/la-isla-reina'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ReturnsRouteImport } from './routes/returns'
 import { Route as ShippingRouteImport } from './routes/shipping'
@@ -43,6 +44,11 @@ const CharacterRoute = CharacterRouteImport.update({
 const CheckoutRoute = CheckoutRouteImport.update({
   id: '/checkout',
   path: '/checkout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LaIslaReinaRoute = LaIslaReinaRouteImport.update({
+  id: '/la-isla-reina',
+  path: '/la-isla-reina',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -77,6 +83,7 @@ export interface FileRoutesByFullPath {
   '/cart': typeof CartRoute
   '/character': typeof CharacterRoute
   '/checkout': typeof CheckoutRoute
+  '/la-isla-reina': typeof LaIslaReinaRoute
   '/privacy': typeof PrivacyRoute
   '/returns': typeof ReturnsRoute
   '/shipping': typeof ShippingRoute
@@ -89,6 +96,7 @@ export interface FileRoutesByTo {
   '/cart': typeof CartRoute
   '/character': typeof CharacterRoute
   '/checkout': typeof CheckoutRoute
+  '/la-isla-reina': typeof LaIslaReinaRoute
   '/privacy': typeof PrivacyRoute
   '/returns': typeof ReturnsRoute
   '/shipping': typeof ShippingRoute
@@ -102,6 +110,7 @@ export interface FileRoutesById {
   '/cart': typeof CartRoute
   '/character': typeof CharacterRoute
   '/checkout': typeof CheckoutRoute
+  '/la-isla-reina': typeof LaIslaReinaRoute
   '/privacy': typeof PrivacyRoute
   '/returns': typeof ReturnsRoute
   '/shipping': typeof ShippingRoute
@@ -116,6 +125,7 @@ export interface FileRouteTypes {
     | '/cart'
     | '/character'
     | '/checkout'
+    | '/la-isla-reina'
     | '/privacy'
     | '/returns'
     | '/shipping'
@@ -128,6 +138,7 @@ export interface FileRouteTypes {
     | '/cart'
     | '/character'
     | '/checkout'
+    | '/la-isla-reina'
     | '/privacy'
     | '/returns'
     | '/shipping'
@@ -140,6 +151,7 @@ export interface FileRouteTypes {
     | '/cart'
     | '/character'
     | '/checkout'
+    | '/la-isla-reina'
     | '/privacy'
     | '/returns'
     | '/shipping'
@@ -153,6 +165,7 @@ export interface RootRouteChildren {
   CartRoute: typeof CartRoute
   CharacterRoute: typeof CharacterRoute
   CheckoutRoute: typeof CheckoutRoute
+  LaIslaReinaRoute: typeof LaIslaReinaRoute
   PrivacyRoute: typeof PrivacyRoute
   ReturnsRoute: typeof ReturnsRoute
   ShippingRoute: typeof ShippingRoute
@@ -195,6 +208,13 @@ declare module '@tanstack/react-router' {
       path: '/checkout'
       fullPath: '/checkout'
       preLoaderRoute: typeof CheckoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/la-isla-reina': {
+      id: '/la-isla-reina'
+      path: '/la-isla-reina'
+      fullPath: '/la-isla-reina'
+      preLoaderRoute: typeof LaIslaReinaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -241,6 +261,7 @@ const rootRouteChildren: RootRouteChildren = {
   CartRoute: CartRoute,
   CharacterRoute: CharacterRoute,
   CheckoutRoute: CheckoutRoute,
+  LaIslaReinaRoute: LaIslaReinaRoute,
   PrivacyRoute: PrivacyRoute,
   ReturnsRoute: ReturnsRoute,
   ShippingRoute: ShippingRoute,

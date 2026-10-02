@@ -1,6 +1,6 @@
 import { asset } from '#/lib/asset'
 
-export type ProductCategory = 'tee' | 'hoodie' | 'headwear' | 'figure' | 'accessory'
+export type ProductCategory = 'tee' | 'hoodie' | 'crop-top' | 'headwear' | 'figure' | 'accessory'
 
 export type Product = {
   id: string
@@ -15,6 +15,8 @@ export type Product = {
   colorLabel?: string
   tags?: string[]
   printfulTemplateId?: string
+  /** Collection slugs this product belongs to (see `collections`). */
+  collections?: string[]
   externalUrl?: string
   comingSoon?: boolean
   buyDisabled?: boolean
@@ -27,6 +29,25 @@ export const TEE_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL'] as co
 export const HOODIE_SIZES = TEE_SIZES
 /** Beanies — one size fits most. */
 export const BEANIE_SIZES = ['One Size'] as const
+/** XS–XL — women's cotton crop top range. */
+export const CROP_SIZES = ['XS', 'S', 'M', 'L', 'XL'] as const
+
+export type Collection = {
+  slug: string
+  name: string
+  tagline: string
+  /** Route path for the collection page. */
+  path: string
+}
+
+export const LA_ISLA_REINA: Collection = {
+  slug: 'la-isla-reina',
+  name: 'La Isla Reina Line',
+  tagline: 'Pretty. Powerful. Puerto Rican. High Caliber.',
+  path: '/la-isla-reina',
+}
+
+export const collections: Collection[] = [LA_ISLA_REINA]
 
 /**
  * Classic Gildan palette carried on Printful for Gildan 5000 (tee)
@@ -414,6 +435,69 @@ export const products: Product[] = [
     printfulTemplateId: '107947407',
   },
 
+  // --- La Isla Reina Line (women's cotton crop tops, black) ---
+  {
+    id: 'la-isla-reina-crop-top',
+    slug: 'la-isla-reina-crop-top',
+    name: 'La Isla Reina Crop Top',
+    description:
+      'The queen of the island — PR flag flying over El Morro, crown on her head, crown sneakers on her feet. Boricua pride, front and center. Women\'s cotton crop top in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-crop-front.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...CROP_SIZES],
+    category: 'crop-top',
+    tags: ['la-isla-reina', 'boricua', 'el-morro', 'pr-flag', 'crown'],
+    printfulTemplateId: '108271485',
+    collections: ['la-isla-reina'],
+  },
+  {
+    id: 'la-isla-reina-moto-crop-top',
+    slug: 'la-isla-reina-moto-crop-top',
+    name: 'La Isla Reina Moto Crop Top',
+    description:
+      'Red bike, PR flag sleeve, crown sneakers on the pegs — riding the El Morro wall at sunset. Boricua and built for the road. Women\'s cotton crop top in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-moto-crop-art.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...CROP_SIZES],
+    category: 'crop-top',
+    tags: ['la-isla-reina', 'boricua', 'moto', 'el-morro', 'crown'],
+    collections: ['la-isla-reina'],
+  },
+  {
+    id: 'la-isla-reina-pina-colada-crop-top',
+    slug: 'la-isla-reina-pina-colada-crop-top',
+    name: 'La Isla Reina Piña Colada Crop Top',
+    description:
+      'Piña colada in hand, posted up on a PR flag cooler in crown sneakers — island time, queen energy. Women\'s cotton crop top in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-pina-colada-crop-art.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...CROP_SIZES],
+    category: 'crop-top',
+    tags: ['la-isla-reina', 'boricua', 'pina-colada', 'pr-flag', 'crown'],
+    collections: ['la-isla-reina'],
+  },
+  {
+    id: 'la-isla-reina-waterfall-crop-top',
+    slug: 'la-isla-reina-waterfall-crop-top',
+    name: 'La Isla Reina Waterfall Crop Top',
+    description:
+      'Rainforest waterfall, El Morro garita in the mist, PR flag on her sleeve. Boricua paradise with a crown on top. Women\'s cotton crop top in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-waterfall-crop-art.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...CROP_SIZES],
+    category: 'crop-top',
+    tags: ['la-isla-reina', 'boricua', 'waterfall', 'el-morro', 'crown'],
+    collections: ['la-isla-reina'],
+  },
+
   // --- Headwear (black beanies, gold High Caliber crown logo embroidered on the front cuff) ---
   {
     id: 'high-caliber-3d-puff-cuffed-beanie',
@@ -528,6 +612,14 @@ export function getShopTees(): Product[] {
 
 export function getShopHoodies(): Product[] {
   return products.filter((p) => p.category === 'hoodie')
+}
+
+export function getShopCropTops(): Product[] {
+  return products.filter((p) => p.category === 'crop-top')
+}
+
+export function getCollectionProducts(slug: string): Product[] {
+  return products.filter((p) => !p.hidden && p.collections?.includes(slug))
 }
 
 export function getShopHeadwear(): Product[] {

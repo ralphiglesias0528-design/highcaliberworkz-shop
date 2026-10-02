@@ -49,7 +49,7 @@ function ProductPage() {
 
         <div>
           <p className="text-[10px] tracking-[0.3em] text-pr-red uppercase">
-            {product.category}
+            {product.category.replace('-', ' ')}
             {product.colorLabel ? ` · ${product.colorLabel}` : ''}
           </p>
           {product.comingSoon && (
