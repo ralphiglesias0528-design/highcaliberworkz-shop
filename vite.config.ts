@@ -45,6 +45,7 @@ const config = defineConfig({
         { path: '/shop/la-isla-reina-moto-crop-top' },
         { path: '/shop/la-isla-reina-pina-colada-crop-top' },
         { path: '/shop/la-isla-reina-waterfall-crop-top' },
+        { path: '/shop/la-isla-reina-hoodie' },
         { path: '/shop/stay-blessed' },
         { path: '/shop/snacks-plans' },
         { path: '/shop/pr-dna' },

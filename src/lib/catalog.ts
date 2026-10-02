@@ -500,6 +500,25 @@ export const products: Product[] = [
     printfulTemplateId: '108273015',
     collections: ['la-isla-reina'],
   },
+  {
+    id: 'la-isla-reina-hoodie',
+    slug: 'la-isla-reina-hoodie',
+    name: 'La Isla Reina Hoodie',
+    description:
+      'Gold crown on the chest, red hibiscus running down both sleeves — Boricua royalty for the cooler nights. Black Bella+Canvas pullover hoodie.',
+    price: 69.99,
+    images: [
+      asset('/images/la-isla-reina-hoodie-front.webp'),
+      asset('/images/la-isla-reina-hoodie-combo.webp'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: ['S', 'M', 'L', 'XL', '2XL'],
+    category: 'hoodie',
+    tags: ['la-isla-reina', 'boricua', 'crown', 'hibiscus'],
+    printfulTemplateId: '108281230',
+    collections: ['la-isla-reina'],
+  },
 
   // --- Headwear (black beanies, gold High Caliber crown logo embroidered on the front cuff) ---
   {

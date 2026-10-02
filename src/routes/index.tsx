@@ -56,7 +56,7 @@ function Home() {
         <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 lg:grid-cols-[1fr_1.4fr]">
           <div>
             <p className="text-[10px] tracking-[0.35em] text-pr-red uppercase">
-              New · Women&apos;s Crop Tops
+              New · Crop Tops &amp; Hoodie
             </p>
             <h2 className="font-display mt-2 text-3xl tracking-wide text-gold uppercase sm:text-4xl">
               {LA_ISLA_REINA.name}
@@ -71,7 +71,7 @@ function Home() {
               Shop La Isla Reina
             </Link>
           </div>
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid grid-cols-3 gap-3 sm:grid-cols-5">
             {reina.map((p) => (
               <Link
                 key={p.id}
