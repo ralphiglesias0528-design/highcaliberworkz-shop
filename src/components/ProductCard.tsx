@@ -16,8 +16,16 @@ export function ProductCard({ product }: { product: Product }) {
         <img
           src={image}
           alt={`${product.name}${product.colorLabel ? ` in ${product.colorLabel}` : ''}`}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className={`h-full w-full object-cover transition duration-500 group-hover:scale-105${product.hoverImage ? ' group-hover:opacity-0' : ''}`}
         />
+        {product.hoverImage && (
+          <img
+            src={product.hoverImage}
+            alt={`${product.name} — side view`}
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover opacity-0 transition duration-500 group-hover:scale-105 group-hover:opacity-100"
+          />
+        )}
         {disabled && (
           <span className="absolute top-3 left-3 bg-pr-red px-2 py-1 text-[10px] font-bold tracking-widest text-white uppercase">
             Coming Soon

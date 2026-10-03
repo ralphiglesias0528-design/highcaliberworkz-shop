@@ -3,7 +3,7 @@
 Source mockups are small screenshots on a white background with a light-grey
 band at the top. Knock out the light background connected to the image edges
 (transparent, like the crop-top mockups), tight-crop to the garment, pad to a
-square (main image) and resize to ~1200px.
+square and resize to ~1200px.
 """
 import os
 from collections import deque
@@ -70,9 +70,17 @@ if not os.path.exists(main_src):
 
 for src, name, square in [
     (main_src, 'la-isla-reina-hoodie-front.webp', True),
-    (os.path.join(SRC, 'isla-reina-hoodie-regular-combo.png'), 'la-isla-reina-hoodie-combo.webp', False),
+    # Printful sleeve mockups (transparent): same square tight-crop as the crop tops.
+    (os.path.join(SRC, 'isla-reina-hoodie-mockup-left.png'), 'la-isla-reina-hoodie-left.webp', True),
+    (os.path.join(SRC, 'isla-reina-hoodie-mockup-right.png'), 'la-isla-reina-hoodie-right.webp', True),
 ]:
-    im = fit_1200(tight(knock_out_background(Image.open(src)), square))
+    if not os.path.exists(src):
+        print('skip (source missing, keeping existing file):', name)
+        continue
+    im = Image.open(src).convert('RGBA')
+    if im.getchannel('A').getextrema()[0] == 255:  # opaque screenshot on white
+        im = knock_out_background(im)
+    im = fit_1200(tight(im, square))
     dst = os.path.join(OUT, name)
     im.save(dst, 'WEBP', quality=88, method=6)
     print(name, im.size, os.path.getsize(dst) // 1024, 'KB <-', src)

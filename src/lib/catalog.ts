@@ -9,6 +9,8 @@ export type Product = {
   description: string
   price: number
   images: string[]
+  /** Optional image swapped in when hovering the product card. */
+  hoverImage?: string
   colors?: string[]
   sizes?: string[]
   category: ProductCategory
@@ -509,8 +511,10 @@ export const products: Product[] = [
     price: 69.99,
     images: [
       asset('/images/la-isla-reina-hoodie-front.webp'),
-      asset('/images/la-isla-reina-hoodie-combo.webp'),
+      asset('/images/la-isla-reina-hoodie-left.webp'),
+      asset('/images/la-isla-reina-hoodie-right.webp'),
     ],
+    hoverImage: asset('/images/la-isla-reina-hoodie-left.webp'),
     colors: ['Black'],
     colorLabel: 'Black',
     sizes: ['S', 'M', 'L', 'XL', '2XL'],
