@@ -76,8 +76,8 @@ export const products: Product[] = [
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut. Black Bella+Canvas 3001 with white lettering.',
     price: 35.00,
     images: [
-      asset('/images/stay-blessed-front.webp'),
       asset('/images/stay-blessed-back.webp'),
+      asset('/images/stay-blessed-front.webp'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
@@ -145,8 +145,8 @@ export const products: Product[] = [
       'Iron sharpens iron. Spotter energy — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Bella+Canvas 3001.',
     price: 35.00,
     images: [
-      asset('/images/bash-bros-front.webp'),
       asset('/images/bash-bros-back.webp'),
+      asset('/images/bash-bros-front.webp'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
@@ -359,8 +359,8 @@ export const products: Product[] = [
       'Same El Gordo / High Caliber artwork as the Born for Adversity tee — Proverbs 17:17 — on a Gildan 18500 heavy blend hoodie. Large back art + left-chest logo. Pick your blank color.',
     price: 55.00,
     images: [
-      asset('/images/born-for-adversity-hoodie-front.webp'),
       asset('/images/born-for-adversity-hoodie-back.webp'),
+      asset('/images/born-for-adversity-hoodie-front.webp'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
