@@ -76,7 +76,7 @@ export const products: Product[] = [
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut. Black Bella+Canvas 3001 with white lettering.',
     price: 35.00,
     images: [
-      asset('/images/stay-blessed-back.webp'),
+      asset('/images/stay-blessed-back-noswoosh.webp'),
       asset('/images/stay-blessed-front.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -111,7 +111,7 @@ export const products: Product[] = [
       'Island blood, city streets. For the ones who carry Boricua DNA wherever they go. Bella+Canvas 3001.',
     price: 35.00,
     images: [
-      asset('/images/pr-dna-front.webp'),
+      asset('/images/pr-dna-front-noswoosh.webp'),
       asset('/images/pr-dna-back.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -128,7 +128,7 @@ export const products: Product[] = [
       'Freedom Weighs a Ton — full front art and High Caliber logo at the nape. Bella+Canvas 3001.',
     price: 35.00,
     images: [
-      asset('/images/freedom-weighs-a-ton-front.webp'),
+      asset('/images/freedom-weighs-a-ton-front-noswoosh.webp'),
       asset('/images/freedom-weighs-a-ton-back.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -145,7 +145,7 @@ export const products: Product[] = [
       'Iron sharpens iron. Spotter energy — Bash Bros full back art, left-chest High Caliber logo, Proverbs 27:17. Bella+Canvas 3001.',
     price: 35.00,
     images: [
-      asset('/images/bash-bros-back.webp'),
+      asset('/images/bash-bros-back-noswoosh.webp'),
       asset('/images/bash-bros-front.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -218,7 +218,7 @@ export const products: Product[] = [
       'Tiburón Ninja — shark-headed El Gordo with the PR flag headband, karambits and shark-face kicks, straight off the San Juan waterfront. Front art, High Caliber Logo at the top of the back. Bella+Canvas 3001.',
     price: 35.00,
     images: [
-      asset('/images/tiburon-ninja-tee-front.webp'),
+      asset('/images/tiburon-ninja-tee-front-noswoosh.webp'),
       asset('/images/tiburon-ninja-tee-back.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -274,7 +274,7 @@ export const products: Product[] = [
       'Same El Gordo / High Caliber artwork as the Stay Blessed tee — faith, family, hustle, progress — on a Gildan 18500 heavy blend hoodie. Large front art + High Caliber logo at the back neck. Shown in Black with white lettering.',
     price: 55.00,
     images: [
-      asset('/images/stay-blessed-hoodie-front.webp'),
+      asset('/images/stay-blessed-hoodie-front-noswoosh.webp'),
       asset('/images/stay-blessed-hoodie-back.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -309,7 +309,7 @@ export const products: Product[] = [
       'Same El Gordo / High Caliber artwork as the Puerto Rico In My DNA tee on a Gildan 18500 heavy blend hoodie. Large front art + High Caliber nape logo on back. Pick your blank color.',
     price: 55.00,
     images: [
-      asset('/images/pr-dna-hoodie-front.webp'),
+      asset('/images/pr-dna-hoodie-front-noswoosh.webp'),
       asset('/images/pr-dna-hoodie-back.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -326,7 +326,7 @@ export const products: Product[] = [
       'Same El Gordo / High Caliber artwork as the Freedom Weighs a Ton tee on a Gildan 18500 heavy blend hoodie. Large front art + High Caliber nape logo on back. Pick your blank color.',
     price: 55.00,
     images: [
-      asset('/images/freedom-weighs-a-ton-hoodie-front.webp'),
+      asset('/images/freedom-weighs-a-ton-hoodie-front-noswoosh.webp'),
       asset('/images/freedom-weighs-a-ton-hoodie-back.webp'),
     ],
     colors: [...GARMENT_COLORS],
@@ -342,7 +342,7 @@ export const products: Product[] = [
       'Bash Bros on a heavy hoodie — Proverbs 27:17 / iron sharpens iron. Full original back art + left-chest High Caliber logo. Pick your blank color.',
     price: 55.00,
     images: [
-      asset('/images/bash-bros-hoodie-back.png'),
+      asset('/images/bash-bros-hoodie-back-noswoosh.png'),
       asset('/images/bash-bros-hoodie-front.png'),
     ],
     colors: [...GARMENT_COLORS],
@@ -412,7 +412,7 @@ export const products: Product[] = [
       'Same El Gordo / High Caliber artwork as the Tiburón Ninja Tee on a Gildan 18500 heavy blend hoodie. Large front art + High Caliber Logo at the top of the back. Pick your blank color.',
     price: 55.00,
     images: [
-      asset('/images/tiburon-ninja-hoodie-front.png'),
+      asset('/images/tiburon-ninja-hoodie-front-noswoosh.png'),
       asset('/images/tiburon-ninja-hoodie-back.png'),
     ],
     colors: [...GARMENT_COLORS],
@@ -608,7 +608,7 @@ export const optionalProducts: Product[] = [
     description:
       'El Gordo Ninja — collectible figure. Coming soon.',
     price: 54,
-    images: [asset('/images/el-gordo-figure-sheet.png')],
+    images: [asset('/images/el-gordo-figure-sheet-noswoosh.png')],
     category: 'figure',
     // 3D print vendor not confirmed yet — listed, but no add-to-cart.
     comingSoon: true,

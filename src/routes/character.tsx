@@ -19,7 +19,7 @@ function CharacterPage() {
 
       <div className="mt-10 overflow-hidden border border-gold/30 bg-black">
         <img
-          src={asset('/images/el-gordo-figure-sheet.png')}
+          src={asset('/images/el-gordo-figure-sheet-noswoosh.png')}
           alt="El Gordo Ninja figure sheet"
           className="mx-auto w-full max-w-3xl object-contain"
         />
