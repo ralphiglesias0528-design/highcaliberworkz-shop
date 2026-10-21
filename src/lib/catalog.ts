@@ -33,6 +33,8 @@ export const HOODIE_SIZES = TEE_SIZES
 export const BEANIE_SIZES = ['One Size'] as const
 /** XS–XL — women's cotton crop top range. */
 export const CROP_SIZES = ['XS', 'S', 'M', 'L', 'XL'] as const
+/** S–3XL — Bella+Canvas 6400 women's relaxed tee range. */
+export const WOMENS_TEE_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL'] as const
 
 export type Collection = {
   slug: string
@@ -504,6 +506,67 @@ export const products: Product[] = [
     category: 'crop-top',
     tags: ['la-isla-reina', 'boricua', 'waterfall', 'el-morro', 'crown'],
     printfulTemplateId: '108273015',
+    collections: ['la-isla-reina'],
+  },
+  // --- La Isla Reina Line (women's relaxed tees, black) ---
+  {
+    id: 'la-isla-reina-flag-tee',
+    slug: 'la-isla-reina-flag-tee',
+    name: 'La Isla Reina Flag Tee',
+    description:
+      'The queen of the island — PR flag flying over El Morro, crown on her head, crown sneakers on her feet. Boricua pride, front and center. Bella+Canvas 6400 women\'s relaxed tee in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-flag-tee-front.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...WOMENS_TEE_SIZES],
+    category: 'tee',
+    tags: ['la-isla-reina', 'boricua', 'el-morro', 'pr-flag', 'crown', 'womens-tee'],
+    collections: ['la-isla-reina'],
+  },
+  {
+    id: 'la-isla-reina-motorcycle-tee',
+    slug: 'la-isla-reina-motorcycle-tee',
+    name: 'La Isla Reina Motorcycle Tee',
+    description:
+      'Red bike, PR flag sleeve, crown sneakers on the pegs — riding the El Morro wall at sunset. Boricua and built for the road. Bella+Canvas 6400 women\'s relaxed tee in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-motorcycle-tee-front.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...WOMENS_TEE_SIZES],
+    category: 'tee',
+    tags: ['la-isla-reina', 'boricua', 'moto', 'el-morro', 'crown', 'womens-tee'],
+    collections: ['la-isla-reina'],
+  },
+  {
+    id: 'la-isla-reina-pina-colada-tee',
+    slug: 'la-isla-reina-pina-colada-tee',
+    name: 'La Isla Reina Piña Colada Tee',
+    description:
+      'Piña colada in hand, posted up on a PR flag cooler in crown sneakers — island time, queen energy. Bella+Canvas 6400 women\'s relaxed tee in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-pina-colada-tee-front.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...WOMENS_TEE_SIZES],
+    category: 'tee',
+    tags: ['la-isla-reina', 'boricua', 'pina-colada', 'pr-flag', 'crown', 'womens-tee'],
+    collections: ['la-isla-reina'],
+  },
+  {
+    id: 'la-isla-reina-waterfall-tee',
+    slug: 'la-isla-reina-waterfall-tee',
+    name: 'La Isla Reina Waterfall Tee',
+    description:
+      'Rainforest waterfall, El Morro garita in the mist, PR flag on her sleeve. Boricua paradise with a crown on top. Bella+Canvas 6400 women\'s relaxed tee in black.',
+    price: 35.00,
+    images: [asset('/images/la-isla-reina-waterfall-tee-front.webp')],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...WOMENS_TEE_SIZES],
+    category: 'tee',
+    tags: ['la-isla-reina', 'boricua', 'waterfall', 'el-morro', 'crown', 'womens-tee'],
     collections: ['la-isla-reina'],
   },
   {
