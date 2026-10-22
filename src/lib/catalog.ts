@@ -574,7 +574,7 @@ export const products: Product[] = [
     slug: 'la-isla-reina-hoodie',
     name: 'La Isla Reina Hoodie',
     description:
-      'Gold crown on the chest, red hibiscus running down both sleeves — Boricua royalty for the cooler nights. Black Bella+Canvas pullover hoodie.',
+      'Gold High Caliber crown over a script High Caliber on the chest, red hibiscus running down both sleeves — Boricua royalty for the cooler nights. Black Bella+Canvas pullover hoodie.',
     price: 69.99,
     images: [
       asset('/images/la-isla-reina-hoodie-front.webp'),
