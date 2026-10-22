@@ -1,4 +1,4 @@
-import { Link, createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router'
 import { asset } from '#/lib/asset'
 
 export const Route = createFileRoute('/character')({ component: CharacterPage })
@@ -14,25 +14,15 @@ function CharacterPage() {
       </h1>
       <p className="mt-4 max-w-2xl text-sm leading-relaxed text-zinc-400">
         Street silhouette. Island swagger. El Gordo Ninja is the face of the
-        High Caliber universe. The El Gordo Ninja collectible figure is coming soon.
+        High Caliber universe.
       </p>
 
       <div className="mt-10 overflow-hidden border border-gold/30 bg-black">
         <img
           src={asset('/images/el-gordo-figure-sheet-noswoosh.png')}
-          alt="El Gordo Ninja figure sheet"
+          alt="El Gordo Ninja character sheet"
           className="mx-auto w-full max-w-3xl object-contain"
         />
-      </div>
-
-      <div className="mt-8 flex flex-wrap gap-3">
-        <Link
-          to="/shop/$slug"
-          params={{ slug: 'el-gordo-figure' }}
-          className="border border-gold bg-gold px-6 py-3 text-xs font-bold tracking-[0.2em] text-charcoal uppercase hover:bg-transparent hover:text-gold"
-        >
-          Figure product
-        </Link>
       </div>
     </div>
   )

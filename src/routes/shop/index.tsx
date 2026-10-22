@@ -4,7 +4,6 @@ import {
   getShopHoodies,
   getShopCropTops,
   getShopHeadwear,
-  getShopExtras,
   LA_ISLA_REINA,
 } from '#/lib/catalog'
 import { ProductCard } from '#/components/ProductCard'
@@ -16,7 +15,6 @@ function ShopPage() {
   const hoodies = getShopHoodies()
   const cropTops = getShopCropTops()
   const headwear = getShopHeadwear()
-  const extras = getShopExtras()
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
@@ -82,14 +80,6 @@ function ShopPage() {
         ))}
       </div>
 
-      <h2 className="mt-14 mb-4 text-xs tracking-[0.25em] text-zinc-500 uppercase">
-        More
-      </h2>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {extras.map((p) => (
-          <ProductCard key={p.id} product={p} />
-        ))}
-      </div>
     </div>
   )
 }

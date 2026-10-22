@@ -30,7 +30,7 @@ npm run preview
 | Path | Page |
 |------|------|
 | `/` | Home |
-| `/shop` | Catalog (6 tees + 6 hoodies + optional figure/tray) |
+| `/shop` | Catalog (6 tees + 6 hoodies) |
 | `/shop/$slug` | Product detail |
 | `/cart` | Cart |
 | `/checkout` | Dry-run order summary |
@@ -60,7 +60,6 @@ npm run preview
 
 Blank colors (tees + hoodies): Black, White, Navy, Sport Grey, Sand, Red, Forest Green, Charcoal.
 
-Optional: El Gordo Ninja Figure (Shop3d), Rolling Tray (coming soon).
 
 ## Brand rules
 

@@ -1,6 +1,6 @@
 import { asset } from '#/lib/asset'
 
-export type ProductCategory = 'tee' | 'hoodie' | 'crop-top' | 'headwear' | 'figure' | 'accessory'
+export type ProductCategory = 'tee' | 'hoodie' | 'crop-top' | 'headwear'
 
 export type Product = {
   id: string
@@ -663,42 +663,6 @@ export const products: Product[] = [
   },
 ]
 
-export const optionalProducts: Product[] = [
-  {
-    id: 'el-gordo-figure',
-    slug: 'el-gordo-figure',
-    name: 'El Gordo Ninja Figure',
-    description:
-      'El Gordo Ninja — collectible figure. Coming soon.',
-    price: 54,
-    images: [asset('/images/el-gordo-figure-sheet-noswoosh.png')],
-    category: 'figure',
-    // 3D print vendor not confirmed yet — listed, but no add-to-cart.
-    comingSoon: true,
-    buyDisabled: true,
-  },
-  {
-    id: 'rolling-tray',
-    slug: 'rolling-tray',
-    name: 'Rolling Tray',
-    description:
-      'High Caliber rolling tray. Coming soon.',
-    price: 34,
-    // No unique tray mockup found — use HC print art (cannabis motif) as distinct brand placeholder.
-    images: [asset('/images/high-caliber-print-art.png')],
-    category: 'accessory',
-    comingSoon: true,
-    buyDisabled: true,
-    // Hidden from the shop (not listed, not routable). Remove this flag to restore.
-    hidden: true,
-  },
-]
-
-/** Extras shown in the shop's "More" section (hidden products excluded). */
-export function getShopExtras(): Product[] {
-  return optionalProducts.filter((p) => !p.hidden)
-}
-
 export function getShopTees(): Product[] {
   return products.filter((p) => p.category === 'tee')
 }
@@ -721,8 +685,7 @@ export function getShopHeadwear(): Product[] {
 
 export function getProductBySlug(slug: string): Product | undefined {
   const product =
-    products.find((p) => p.slug === slug) ??
-    optionalProducts.find((p) => p.slug === slug)
+    products.find((p) => p.slug === slug)
   return product && !product.hidden ? product : undefined
 }
 

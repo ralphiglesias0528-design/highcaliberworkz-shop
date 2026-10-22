@@ -60,7 +60,6 @@ const config = defineConfig({
         { path: '/shop/born-for-adversity-hoodie' },
         { path: '/shop/clock-in-square-up' },
         { path: '/shop/clock-in-square-up-hoodie' },
-        { path: '/shop/el-gordo-figure' },
         { path: '/shop/high-caliber-3d-puff-cuffed-beanie' },
         { path: '/shop/high-caliber-waffle-beanie' },
         { path: '/shop/high-caliber-fisherman-beanie' },
