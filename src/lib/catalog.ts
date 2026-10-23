@@ -365,7 +365,7 @@ export const products: Product[] = [
       'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 3001 tee.',
     price: 39.99,
     images: [
-      asset('/images/hc-crown-tee-front.webp'),
+      asset('/images/hc-crown3-tee-front.webp'),
       asset('/images/hc-crown-tee-back.webp'),
     ],
     colors: ['Black'],
@@ -383,7 +383,7 @@ export const products: Product[] = [
       'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 4711 oversized heavyweight crewneck.',
     price: 54.99,
     images: [
-      asset('/images/hc-crown-crewneck-front-printful.webp'),
+      asset('/images/hc-crown3-crewneck-front.webp'),
       asset('/images/hc-crown-crewneck-back.webp'),
     ],
     colors: ['Black'],
@@ -401,7 +401,7 @@ export const products: Product[] = [
       'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 3719 hoodie.',
     price: 59.99,
     images: [
-      asset('/images/hc-crown-hoodie-front-printful.webp'),
+      asset('/images/hc-crown3-hoodie-front.webp'),
       asset('/images/hc-crown-hoodie-back.webp'),
     ],
     colors: ['Black'],
