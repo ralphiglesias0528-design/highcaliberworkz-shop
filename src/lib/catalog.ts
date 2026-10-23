@@ -354,6 +354,57 @@ export const products: Product[] = [
     tags: ['iron', 'brotherhood', 'faith', 'proverbs'],
   },
   {
+    id: 'high-caliber-crown-tee',
+    slug: 'high-caliber-crown-tee',
+    name: 'High Caliber Crown Tee',
+    description:
+      'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 3001 tee.',
+    price: 39.99,
+    images: [
+      asset('/images/hc-crown-tee-front.webp'),
+      asset('/images/hc-crown-tee-back.webp'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...TEE_SIZES],
+    category: 'tee',
+    tags: ['high-caliber', 'crown', 'graffiti', 'gold'],
+  },
+  {
+    id: 'high-caliber-crown-crewneck',
+    slug: 'high-caliber-crown-crewneck',
+    name: 'High Caliber Crown Crewneck',
+    description:
+      'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 3945 crewneck sweatshirt.',
+    price: 54.99,
+    images: [
+      asset('/images/hc-crown-crewneck-front.webp'),
+      asset('/images/hc-crown-crewneck-back.webp'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...HOODIE_SIZES],
+    category: 'hoodie',
+    tags: ['high-caliber', 'crown', 'graffiti', 'gold'],
+  },
+  {
+    id: 'high-caliber-crown-hoodie',
+    slug: 'high-caliber-crown-hoodie',
+    name: 'High Caliber Crown Hoodie',
+    description:
+      'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 3719 hoodie.',
+    price: 59.99,
+    images: [
+      asset('/images/hc-crown-hoodie-front.webp'),
+      asset('/images/hc-crown-hoodie-back.webp'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...HOODIE_SIZES],
+    category: 'hoodie',
+    tags: ['high-caliber', 'crown', 'graffiti', 'gold'],
+  },
+  {
     id: 'born-for-adversity-hoodie',
     slug: 'born-for-adversity-hoodie',
     name: 'Born for Adversity Hoodie',
