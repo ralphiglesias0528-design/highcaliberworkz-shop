@@ -34,6 +34,10 @@ export const BEANIE_SIZES = ['One Size'] as const
 /** XS–XL — women's cotton crop top range. */
 export const CROP_SIZES = ['XS', 'S', 'M', 'L', 'XL'] as const
 /** S–3XL — Bella+Canvas 6400 women's relaxed tee range. */
+/** Exact Printful template size ranges for HC Crown products. */
+export const SIZES_S_4XL = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL'] as const
+export const SIZES_S_3XL = ['S', 'M', 'L', 'XL', '2XL', '3XL'] as const
+export const SIZES_S_2XL = ['S', 'M', 'L', 'XL', '2XL'] as const
 export const WOMENS_TEE_SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL'] as const
 
 export type Collection = {
@@ -366,26 +370,28 @@ export const products: Product[] = [
     ],
     colors: ['Black'],
     colorLabel: 'Black',
-    sizes: [...TEE_SIZES],
+    sizes: [...SIZES_S_4XL],
     category: 'tee',
     tags: ['high-caliber', 'crown', 'graffiti', 'gold'],
+    printfulTemplateId: '109275209',
   },
   {
     id: 'high-caliber-crown-crewneck',
     slug: 'high-caliber-crown-crewneck',
     name: 'High Caliber Crown Crewneck',
     description:
-      'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 3945 crewneck sweatshirt.',
+      'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 4711 oversized heavyweight crewneck.',
     price: 54.99,
     images: [
-      asset('/images/hc-crown-crewneck-front.webp'),
+      asset('/images/hc-crown-crewneck-front-printful.webp'),
       asset('/images/hc-crown-crewneck-back.webp'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
-    sizes: [...HOODIE_SIZES],
+    sizes: [...SIZES_S_3XL],
     category: 'hoodie',
     tags: ['high-caliber', 'crown', 'graffiti', 'gold'],
+    printfulTemplateId: '109275478',
   },
   {
     id: 'high-caliber-crown-hoodie',
@@ -395,14 +401,15 @@ export const products: Product[] = [
       'Big gold bullet-tipped High Caliber crown with graffiti lettering printed large across the front. High Caliber Logo on the back, centered just below the collar. Black Bella+Canvas 3719 hoodie.',
     price: 59.99,
     images: [
-      asset('/images/hc-crown-hoodie-front.webp'),
+      asset('/images/hc-crown-hoodie-front-printful.webp'),
       asset('/images/hc-crown-hoodie-back.webp'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
-    sizes: [...HOODIE_SIZES],
+    sizes: [...SIZES_S_2XL],
     category: 'hoodie',
     tags: ['high-caliber', 'crown', 'graffiti', 'gold'],
+    printfulTemplateId: '109275351',
   },
   {
     id: 'born-for-adversity-hoodie',
