@@ -366,7 +366,7 @@ export const products: Product[] = [
     price: 39.99,
     images: [
       asset('/images/hc-crown3-tee-front.webp'),
-      asset('/images/hc-crown-tee-back.webp'),
+      asset('/images/hc-crown3-tee-back.webp'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
@@ -384,7 +384,7 @@ export const products: Product[] = [
     price: 54.99,
     images: [
       asset('/images/hc-crown3-crewneck-front.webp'),
-      asset('/images/hc-crown-crewneck-back.webp'),
+      asset('/images/hc-crown3-crewneck-back.webp'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
@@ -402,7 +402,7 @@ export const products: Product[] = [
     price: 59.99,
     images: [
       asset('/images/hc-crown3-hoodie-front.webp'),
-      asset('/images/hc-crown-hoodie-back.webp'),
+      asset('/images/hc-crown3-hoodie-back.webp'),
     ],
     colors: ['Black'],
     colorLabel: 'Black',
