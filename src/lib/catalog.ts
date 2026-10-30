@@ -1,6 +1,6 @@
 import { asset } from '#/lib/asset'
 
-export type ProductCategory = 'tee' | 'hoodie' | 'crop-top' | 'headwear'
+export type ProductCategory = 'tee' | 'hoodie' | 'crop-top' | 'headwear' | 'outerwear'
 
 export type Product = {
   id: string
@@ -35,6 +35,8 @@ export const BEANIE_SIZES = ['One Size'] as const
 export const CROP_SIZES = ['XS', 'S', 'M', 'L', 'XL'] as const
 /** S–3XL — Bella+Canvas 6400 women's relaxed tee range. */
 /** Exact Printful template size ranges for HC Crown products. */
+/** XS–3XL — Printful all-over print bomber jacket (product 390). */
+export const SIZES_XS_3XL = ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL'] as const
 export const SIZES_S_4XL = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL'] as const
 export const SIZES_S_3XL = ['S', 'M', 'L', 'XL', '2XL', '3XL'] as const
 export const SIZES_S_2XL = ['S', 'M', 'L', 'XL', '2XL'] as const
@@ -719,6 +721,26 @@ export const products: Product[] = [
     tags: ['high-caliber', 'beanie', 'organic', 'embroidered'],
     printfulTemplateId: '107984933',
   },
+  {
+    id: 'high-caliber-bomber-jacket',
+    slug: 'high-caliber-bomber-jacket',
+    name: 'High Caliber Bomber Jacket',
+    description:
+      'Black all-over print bomber with the gold HC monogram large across the back and on the left chest, and "High Caliber" in gold script running down both sleeves. Striped ribbed collar, cuffs and waistband.',
+    price: 90.00,
+    images: [
+      asset('/images/hc-bomber-front.webp'),
+      asset('/images/hc-bomber-back.webp'),
+      asset('/images/hc-bomber-on-model-front.webp'),
+      asset('/images/hc-bomber-on-model-back.webp'),
+    ],
+    colors: ['Black'],
+    colorLabel: 'Black',
+    sizes: [...SIZES_XS_3XL],
+    category: 'outerwear',
+    tags: ['high-caliber', 'bomber', 'monogram', 'gold'],
+    printfulTemplateId: '109579062',
+  },
 ]
 
 export function getShopTees(): Product[] {
@@ -735,6 +757,10 @@ export function getShopCropTops(): Product[] {
 
 export function getCollectionProducts(slug: string): Product[] {
   return products.filter((p) => !p.hidden && p.collections?.includes(slug))
+}
+
+export function getShopOuterwear(): Product[] {
+  return products.filter((p) => p.category === 'outerwear')
 }
 
 export function getShopHeadwear(): Product[] {

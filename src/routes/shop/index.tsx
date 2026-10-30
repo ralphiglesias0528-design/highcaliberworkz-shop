@@ -4,6 +4,7 @@ import {
   getShopHoodies,
   getShopCropTops,
   getShopHeadwear,
+  getShopOuterwear,
   LA_ISLA_REINA,
 } from '#/lib/catalog'
 import { ProductCard } from '#/components/ProductCard'
@@ -15,6 +16,7 @@ function ShopPage() {
   const hoodies = getShopHoodies()
   const cropTops = getShopCropTops()
   const headwear = getShopHeadwear()
+  const outerwear = getShopOuterwear()
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
@@ -26,7 +28,7 @@ function ShopPage() {
           Shop
         </h1>
         <p className="mt-3 max-w-xl text-sm text-zinc-500">
-          {tees.length} tees, {hoodies.length} hoodies, {cropTops.length} crop tops and {headwear.length} beanies. Same High Caliber and El Gordo Ninja art
+          {tees.length} tees, {hoodies.length} hoodies, {outerwear.length} jacket{outerwear.length === 1 ? '' : 's'}, {cropTops.length} crop tops and {headwear.length} beanies. Same High Caliber and El Gordo Ninja art
           across the drops. Multiple blank colors, sizes through 5XL.
         </p>
       </div>
@@ -45,6 +47,15 @@ function ShopPage() {
       </h2>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {hoodies.map((p) => (
+          <ProductCard key={p.id} product={p} />
+        ))}
+      </div>
+
+      <h2 className="mt-14 mb-4 text-xs tracking-[0.25em] text-zinc-500 uppercase">
+        Jackets ({outerwear.length})
+      </h2>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {outerwear.map((p) => (
           <ProductCard key={p.id} product={p} />
         ))}
       </div>

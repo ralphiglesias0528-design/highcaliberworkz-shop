@@ -58,6 +58,7 @@ const config = defineConfig({
         { path: '/shop/freedom-weighs-a-ton-hoodie' },
         { path: '/shop/bash-bros-hoodie' },
         { path: '/shop/born-for-adversity-hoodie' },
+        { path: '/shop/high-caliber-bomber-jacket' },
         { path: '/shop/clock-in-square-up' },
         { path: '/shop/clock-in-square-up-hoodie' },
         { path: '/shop/high-caliber-3d-puff-cuffed-beanie' },
