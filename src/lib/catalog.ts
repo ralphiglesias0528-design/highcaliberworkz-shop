@@ -84,8 +84,8 @@ export const products: Product[] = [
       'Faith. Family. Hustle. Progress. Everyday armor for the ones grinding with purpose — street-ready cut. Black Bella+Canvas 3001 with white lettering.',
     price: 35.00,
     images: [
-      asset('/images/stay-blessed-back-noswoosh.webp'),
       asset('/images/stay-blessed-front.webp'),
+      asset('/images/stay-blessed-back-noswoosh.webp'),
     ],
     colors: [...GARMENT_COLORS],
     colorLabel: 'Black',
